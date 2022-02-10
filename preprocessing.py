@@ -56,5 +56,10 @@ for i in range(total_attempt-1):
         if(ret!=""):
             print(ret)
 
-
-
+### colonne
+### caseid; timestamp; activity;Blockname, Type, 1st-param, 2nd-param, 3rd-param, 4th-param 
+### 2018_galilei_1;1;Set moveSteering on for rotation, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123; 
+### 2018_galilei_1;2;No action, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123; 
+### 2018_galilei_1;3;Increse rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 75, Steering = 0, MotorPorts = 123;
+### 2018_galilei_1;3;decrease speed, MoveSteering, OnForRotations, Rotations = 5, Speed = 75, Steering = 0, MotorPorts = 123;
+### 2018_galilei_1;4;change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 1, Speed = 75, Steering = 0, MotorPorts = 123;
