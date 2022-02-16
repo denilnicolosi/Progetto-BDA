@@ -18,14 +18,6 @@ def diff_param(par1,par2):
     except ValueError:
         return "Change"+ name_param
  
-def add_tracelist(activity, row, increment_timestamp):
-    global trace_list
-    global timestamp
-    row=group_name+", "+ str(timestamp) + ", " + activity + ", " + ",".join(row)
-    trace_list=np.append(trace_list, [row.split(",")],axis=0)
-    #if(increment_timestamp):
-        #timestamp+=1
-
 
 def difference(row1, row2):
     activity=""
@@ -34,30 +26,36 @@ def difference(row1, row2):
     global timestamp
     if(np.array_equal(row1,row2)):
         activity = "No action"
-        if row1[0]!="":
-            add_tracelist(activity,row2, True)
+        row=group_name+", "+ str(timestamp) + ", " + activity + ", " + ",".join(row2)
+        trace_list=np.append(trace_list, [row.split(",")],axis=0)
     else:
         if(row1[0]!=row2[0]):
             activity = "Change blockname to "+row2[0]
-            add_tracelist(activity,row2, True)
+            row=group_name+", "+ str(timestamp) + ", " + activity + ", " + ",".join(row2)
+            trace_list=np.append(trace_list, [row.split(",")],axis=0)
         else:
             if(row1[1]!=row2[1]):
                 activity = "Change type"+row2[1]
-                add_tracelist(activity,row2, True)
+                row=group_name+", "+ str(timestamp) + ", " + activity + ", " + ",".join(row2)
+                trace_list=np.append(trace_list, [row.split(",")],axis=0)
             else:
                 if(row1[2]!=row2[2]):
                     activity= diff_param(row1[2],row2[2])
-                    add_tracelist(activity,row2, False)
+                    row=group_name+", "+ str(timestamp) + ", " + activity + ", " + ",".join(row2)
+                    trace_list=np.append(trace_list, [row.split(",")],axis=0)
                 if(row1[3]!=row2[3]):              
                     activity= diff_param(row1[3],row2[3])
-                    add_tracelist(activity,row2, False)
+                    row=group_name+", "+ str(timestamp) + ", " + activity + ", " + ",".join(row2)
+                    trace_list=np.append(trace_list, [row.split(",")],axis=0)
                 if(row1[4]!=row2[4]):
                     activity= diff_param(row1[4],row2[4])
-                    add_tracelist(activity,row2, False)
+                    row=group_name+", "+ str(timestamp) + ", " + activity + ", " + ",".join(row2)
+                    trace_list=np.append(trace_list, [row.split(",")],axis=0)
                 if(row1[5]!=row2[5]):
                     activity= diff_param(row1[5],row2[5])
-                    add_tracelist(activity,row2, False)
-                #timestamp= timestamp +1   
+                    row=group_name+", "+ str(timestamp) + ", " + activity + ", " + ",".join(row2)
+                    trace_list=np.append(trace_list, [row.split(",")],axis=0)   
+    timestamp= timestamp +1   
 
 file_output="output.csv"
 #np.set_printoptions(threshold=sys.maxsize)
@@ -68,8 +66,8 @@ for file in os.listdir(directory):
     filename=os.fsdecode(file)
     for file2 in os.listdir(directory+"//"+filename):
         if file2.endswith(".rtf"):
-            path=directory+"//"+filename+"//"+file2
-            #path=".//ExA//grandi//2018_LiceoVoltaFellini1F.rtf"
+            #path=directory+"//"+filename+"//"+file2
+            path=".//ExA//grandi//2018_LiceoVoltaFellini1F.rtf"
             df1 = pandas.read_csv(path, encoding ="utf_8")
             group_name=path.replace("//","_")
             group_name=group_name[2:len(group_name)-4]
@@ -86,18 +84,26 @@ for file in os.listdir(directory):
                 else:
                     index_instruction=index_instruction+1        
 
-            instruction = np.empty((total_attempt,max_instruction,6), dtype='U256')
+            #instruction = np.empty((total_attempt,max_instruction,6), dtype='U256')
+            instruction = np.empty((total_attempt+1), dtype=object)
+            
+            #linstruction= []
             index_instruction=0
             attempt=0
+            instruction[attempt] = list()
             for i in range(len(df1)):
                 row=df1._get_value(i,0, takeable = True)
                 if row=="STOP PROGRAM;":
                     attempt= attempt + 1
                     index_instruction=0
+                    instruction[attempt] = list()
                 else:
-                    j=0
+                    j=0                    
+                    instruction[attempt].append(np.empty((6), dtype='U256'))  
                     for value in df1.iloc[i].values:
-                        value=str(value).replace(";","")                        
+                        value=str(value).replace(";","")      
+                        print(index_instruction)
+                        print(j)                                      
                         instruction[attempt][index_instruction][j]=value
                         j=j+1
                         
@@ -107,14 +113,29 @@ for file in os.listdir(directory):
             print(instruction)
             timestamp=0
             #aggiungo una riga vuota per forzare la scrittura gia della prima riga
-            instruction=np.insert(instruction, 0, ["","","","","",""],axis=0)
-            for i in range(len(instruction)-1):
+            #instruction=np.insert(instruction, 0, ["","","","","",""],axis=0)
+            #lista=np.empty((6), dtype='U256')
+            #lista=np.array(np.empty((6), dtype='U256'))
+            #lista.append()
+            #print(type(lista))
+            #print(lista)
+            #print(type(instruction[1]))
+            #print(instruction[1])
+            #lista.append(instruction)
+            
+            #instruction=np.insert(instruction, 0, lista)
+              
+            empty_row=np.empty((6), dtype='U256')
+            for i in range(-1,total_attempt-1):
                 for j in range(len(instruction[i])):
-                    difference(instruction[i][j], instruction[i+1][j])     
-                timestamp+=1              
-
-        #break;
-    #break;
+                    if i==-1:
+                        difference(empty_row, instruction[i+1][j])   
+                    else:
+                        difference(instruction[i][j], instruction[i+1][j])                   
+                
+                        
+        break;
+    break;
             
 pandas.DataFrame(trace_list).to_csv(file_output, header=False, index=False)
     
