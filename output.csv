@@ -55,19 +55,12 @@ ExA_grandi_2018_LiceoGalilei2, 14, No action, MoveSteering, OnForSeconds, Second
 ExA_grandi_2018_LiceoGalilei2, 15, No action, MoveSteering, OnForSeconds, Seconds = 2.8, Speed = 80, Steering = 0, MotorPorts = 123
 ExA_grandi_2018_LiceoGalilei2, 16, No action, MoveSteering, OnForSeconds, Seconds = 2.8, Speed = 80, Steering = 0, MotorPorts = 123
 ExA_grandi_2018_LiceoGalilei2, 17, No action, MoveSteering, OnForSeconds, Seconds = 2.8, Speed = 80, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoGalilei3, 0, Change blockname to Brick Light, Brick Light, On, Colour = 2, Pulse = 1,nan,nan
 ExA_grandi_2018_LiceoGalilei3, 0, Change blockname to MoveSteering, MoveSteering, OnForSeconds, Seconds = 6, Speed = 32, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoGalilei3, 1, No action, Brick Light, On, Colour = 2, Pulse = 1,nan,nan
 ExA_grandi_2018_LiceoGalilei3, 1, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 6.5, Speed = 32, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoGalilei3, 2, No action, Brick Light, On, Colour = 2, Pulse = 1,nan,nan
 ExA_grandi_2018_LiceoGalilei3, 2, No action, MoveSteering, OnForSeconds, Seconds = 6.5, Speed = 32, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoGalilei3, 3, No action, Brick Light, On, Colour = 2, Pulse = 1,nan,nan
 ExA_grandi_2018_LiceoGalilei3, 3, No action, MoveSteering, OnForSeconds, Seconds = 6.5, Speed = 32, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoGalilei3, 4, No action, Brick Light, On, Colour = 2, Pulse = 1,nan,nan
 ExA_grandi_2018_LiceoGalilei3, 4, No action, MoveSteering, OnForSeconds, Seconds = 6.5, Speed = 32, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoGalilei3, 5, No action, Brick Light, On, Colour = 2, Pulse = 1,nan,nan
 ExA_grandi_2018_LiceoGalilei3, 5, No action, MoveSteering, OnForSeconds, Seconds = 6.5, Speed = 32, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoGalilei3, 6, No action, Brick Light, On, Colour = 2, Pulse = 1,nan,nan
 ExA_grandi_2018_LiceoGalilei3, 6, No action, MoveSteering, OnForSeconds, Seconds = 6.5, Speed = 32, Steering = 0, MotorPorts = 123
 ExA_grandi_2018_LiceoGalilei4, 0, Change blockname to Start Loop Cycle, Start Loop Cycle, Index = 0,nan,nan,nan,nan
 ExA_grandi_2018_LiceoGalilei4, 0, Change blockname to MoveSteering, MoveSteering, OnUnlimited, Speed = 100, Steering = 0, MotorPorts = 123,nan
@@ -252,17 +245,10 @@ ExA_grandi_2018_LiceoVoltaFellini1F, 4, No action, MoveSteering, OnForRotations,
 ExA_grandi_2018_LiceoVoltaFellini1F, 5, Increase Speed, MoveSteering, OnForRotations, Rotations = 5.7875, Speed = 100, Steering = 0, MotorPorts = 123
 ExA_grandi_2018_LiceoVoltaFellini1F, 6, No action, MoveSteering, OnForRotations, Rotations = 5.7875, Speed = 100, Steering = 0, MotorPorts = 123
 ExA_grandi_2018_LiceoVoltaFellini1F, 7, Decrease Speed, MoveSteering, OnForRotations, Rotations = 5.7875, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoVoltaFellini1F, 7, Change blockname to Sound, Sound, Play Tone, Frequency = 440, Volume = 78, Play Type = 0, Duration = 1
 ExA_grandi_2018_LiceoVoltaFellini1F, 8, No action, MoveSteering, OnForRotations, Rotations = 5.7875, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoVoltaFellini1F, 8, No action, Sound, Play Tone, Frequency = 440, Volume = 78, Play Type = 0, Duration = 1
 ExA_grandi_2018_LiceoVoltaFellini1F, 9, No action, MoveSteering, OnForRotations, Rotations = 5.7875, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoVoltaFellini1F, 9, Change type Play File, Sound, Play File, FileName = Motor stop, Volume = 83, Play Type = 0,nan
-ExA_grandi_2018_LiceoVoltaFellini1F, 10, Change blockname to Sound, Sound, Play File, FileName = Motor start, Volume = 100, Play Type = 0,nan
-ExA_grandi_2018_LiceoVoltaFellini1F, 10, Change blockname to MoveSteering, MoveSteering, OnForRotations, Rotations = 5.7875, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoVoltaFellini1F, 10, Change blockname to Sound, Sound, Play File, FileName = Motor stop, Volume = 100, Play Type = 0,nan
-ExA_grandi_2018_LiceoVoltaFellini1F, 11, No action, Sound, Play File, FileName = Motor start, Volume = 100, Play Type = 0,nan
+ExA_grandi_2018_LiceoVoltaFellini1F, 10, No action, MoveSteering, OnForRotations, Rotations = 5.7875, Speed = 60, Steering = 0, MotorPorts = 123
 ExA_grandi_2018_LiceoVoltaFellini1F, 11, No action, MoveSteering, OnForRotations, Rotations = 5.7875, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoVoltaFellini1F, 11, No action, Sound, Play File, FileName = Motor stop, Volume = 100, Play Type = 0,nan
 ExA_grandi_2018_LiceoVoltaFellini2A, 0, Change blockname to MoveSteering, MoveSteering, OnForRotations, Rotations = 18.18, Speed = 75, Steering = 0, MotorPorts = 123
 ExA_grandi_2018_LiceoVoltaFellini2A, 1, No action, MoveSteering, OnForRotations, Rotations = 18.18, Speed = 75, Steering = 0, MotorPorts = 123
 ExA_grandi_2018_LiceoVoltaFellini2A, 2, No action, MoveSteering, OnForRotations, Rotations = 18.18, Speed = 75, Steering = 0, MotorPorts = 123
@@ -743,175 +729,106 @@ ExA_grandi_2019_TALENTcampJesi_g2, 1, Decrease Rotations, MoveSteering, OnForRot
 ExA_grandi_2019_TALENTcampJesi_g2, 1, Increase Speed, MoveSteering, OnForRotations, Rotations = 15, Speed = 34, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 2, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 34, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 2, Change blockname to Start Loop Cycle, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 2, Change blockname to Sound, Sound, Play File, FileName = Hello, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 2, Change blockname to EndLoopCycle, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 3, Increase Speed, MoveSteering, OnForRotations, Rotations = 5, Speed = 38, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 3, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 3, No action, Sound, Play File, FileName = Hello, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 3, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 4, Increase Rotations, MoveSteering, OnForRotations, Rotations = 8, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 4, Change blockname to Sound, Sound, Play File, FileName = Black, Volume = 100, Play Type = 0,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 4, Change blockname to , ,,,,,
-ExA_grandi_2019_TALENTcampJesi_g2, 4, Change blockname to , ,,,,,
+ExA_grandi_2019_TALENTcampJesi_g2, 4, Delete blockname Start Loop Cycle, Start Loop Cycle, Index = 0,nan,nan,nan,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 4, Delete blockname EndLoopCycle, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 5, No action, MoveSteering, OnForRotations, Rotations = 8, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 5, Change blockname to , ,,,,,
-ExA_grandi_2019_TALENTcampJesi_g2, 6, Change blockname to Sound, Sound, Play File, FileName = Black, Volume = 100, Play Type = 0,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 6, Change blockname to MoveSteering, MoveSteering, OnForRotations, Rotations = 7, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 7, No action, Sound, Play File, FileName = Black, Volume = 100, Play Type = 0,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 6, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7, Speed = 38, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 7, No action, MoveSteering, OnForRotations, Rotations = 7, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 8, No action, Sound, Play File, FileName = Black, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 8, No action, MoveSteering, OnForRotations, Rotations = 7, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 9, No action, Sound, Play File, FileName = Black, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 9, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.65, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 10, No action, Sound, Play File, FileName = Black, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 10, No action, MoveSteering, OnForRotations, Rotations = 6.65, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 11, No action, Sound, Play File, FileName = Black, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 11, No action, MoveSteering, OnForRotations, Rotations = 6.65, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 12, No action, Sound, Play File, FileName = Black, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 12, No action, MoveSteering, OnForRotations, Rotations = 6.65, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 13, Change FileName, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 13, No action, MoveSteering, OnForRotations, Rotations = 6.65, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 14, No action, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 14, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.5, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 15, No action, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 15, No action, MoveSteering, OnForRotations, Rotations = 6.5, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 16, No action, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 16, No action, MoveSteering, OnForRotations, Rotations = 6.5, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 17, No action, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 17, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 18, No action, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 18, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 5.15, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 19, Change FileName, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 19, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 5.25, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 20, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 20, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 5.27, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 21, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 21, No action, MoveSteering, OnForSeconds, Seconds = 5.27, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 22, Change FileName, Sound, Play File, FileName = Okey-dokey, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 22, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 23, No action, Sound, Play File, FileName = Okey-dokey, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 23, No action, MoveSteering, OnForSeconds, Seconds = 5, Speed = 38, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g2, 24, Change blockname to MoveSteering, MoveSteering, OnForSeconds, Seconds = 30, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 24, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 30, Speed = 38, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 24, Change blockname to Start Loop Cycle, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 24, Change blockname to Sound, Sound, Play File, FileName = Okey-dokey, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 24, Change blockname to EndLoopCycle, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 25, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 5.45, Speed = 38, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 25, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 25, No action, Sound, Play File, FileName = Okey-dokey, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 25, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 26, No action, MoveSteering, OnForSeconds, Seconds = 5.45, Speed = 38, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 26, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 26, No action, Sound, Play File, FileName = Okey-dokey, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 26, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 27, No action, MoveSteering, OnForSeconds, Seconds = 5.45, Speed = 38, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 27, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 27, Change FileName, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 27, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 28, No action, MoveSteering, OnForSeconds, Seconds = 5.45, Speed = 38, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 28, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 28, No action, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 28, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 29, No action, MoveSteering, OnForSeconds, Seconds = 5.45, Speed = 38, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 29, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 29, No action, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 29, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 30, No action, MoveSteering, OnForSeconds, Seconds = 5.45, Speed = 38, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 30, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 30, No action, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 30, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 31, No action, MoveSteering, OnForSeconds, Seconds = 5.45, Speed = 38, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 31, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 31, No action, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 31, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 32, No action, MoveSteering, OnForSeconds, Seconds = 5.45, Speed = 38, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g2, 32, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g2, 32, No action, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g2, 32, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 0, Change blockname to MoveSteering, MoveSteering, OnForSeconds, Seconds = 3, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 0, Change blockname to Sound, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 1, Change type OnForRotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 1, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 2, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 2, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 3, No action, MoveSteering, OnForRotations, Rotations = 6, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 3, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 4, No action, MoveSteering, OnForRotations, Rotations = 6, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 4, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 5, No action, MoveSteering, OnForRotations, Rotations = 6, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 5, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 6, No action, MoveSteering, OnForRotations, Rotations = 6, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 6, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 7, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.8, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 7, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 8, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.9, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 8, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 9, No action, MoveSteering, OnForRotations, Rotations = 5.9, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 9, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 10, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.85, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 10, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 11, No action, MoveSteering, OnForRotations, Rotations = 5.85, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 11, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 12, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.89, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 12, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 13, No action, MoveSteering, OnForRotations, Rotations = 5.89, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 13, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 14, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.9, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 14, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 15, No action, MoveSteering, OnForRotations, Rotations = 5.9, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 15, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 16, No action, MoveSteering, OnForRotations, Rotations = 5.9, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 16, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 17, No action, MoveSteering, OnForRotations, Rotations = 5.9, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 17, Change blockname to , ,,,,,
 ExA_grandi_2019_TALENTcampJesi_g3, 18, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.95, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 18, Change blockname to Sound, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 19, No action, MoveSteering, OnForRotations, Rotations = 5.95, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 19, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 20, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.93, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 20, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 21, No action, MoveSteering, OnForRotations, Rotations = 5.93, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 21, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 22, No action, MoveSteering, OnForRotations, Rotations = 5.93, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 22, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 23, Decrease Speed, MoveSteering, OnForRotations, Rotations = 5.93, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 23, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 24, No action, MoveSteering, OnForRotations, Rotations = 5.93, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 24, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 25, No action, MoveSteering, OnForRotations, Rotations = 5.93, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 25, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 26, No action, MoveSteering, OnForRotations, Rotations = 5.93, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 26, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 27, No action, MoveSteering, OnForRotations, Rotations = 5.93, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 27, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 28, No action, MoveSteering, OnForRotations, Rotations = 5.93, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 28, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 29, No action, MoveSteering, OnForRotations, Rotations = 5.93, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 29, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 30, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.927, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 30, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 31, No action, MoveSteering, OnForRotations, Rotations = 5.927, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 31, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 32, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.928, Speed = 60, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcampJesi_g3, 32, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 33, No action, MoveSteering, OnForRotations, Rotations = 5.928, Speed = 60, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g3, 33, Change blockname to Start Loop Cycle, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g3, 33, Change blockname to Sound, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 33, Change blockname to EndLoopCycle, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 34, No action, MoveSteering, OnForRotations, Rotations = 5.928, Speed = 60, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g3, 34, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g3, 34, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 34, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 35, No action, MoveSteering, OnForRotations, Rotations = 5.928, Speed = 60, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g3, 35, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g3, 35, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 35, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 36, No action, MoveSteering, OnForRotations, Rotations = 5.928, Speed = 60, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g3, 36, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g3, 36, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 36, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 37, No action, MoveSteering, OnForRotations, Rotations = 5.928, Speed = 60, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcampJesi_g3, 37, No action, Start Loop Cycle, Index = 0,nan,nan,nan,nan
-ExA_grandi_2019_TALENTcampJesi_g3, 37, No action, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
 ExA_grandi_2019_TALENTcampJesi_g3, 37, No action, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
 ExA_grandi_2019_TALENTcamp_Osimo_g1, 0, Change blockname to MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcamp_Osimo_g1, 1, Increase Rotations, MoveSteering, OnForRotations, Rotations = 3, Speed = 100, Steering = 0, MotorPorts = 123
@@ -979,7 +896,7 @@ ExA_grandi_2019_TALENTcamp_Osimo_g3, 7, No action, MoveSteering, OnForRotations,
 ExA_grandi_2019_TALENTcamp_Osimo_g3, 7, No action, MoveSteering, OnForRotations, Rotations = 0.7778, Speed = 100, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcamp_Osimo_g3, 8, No action, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcamp_Osimo_g3, 8, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 0.7778, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_grandi_2019_TALENTcamp_Osimo_g3, 8, Change blockname to , ,,,,,
+ExA_grandi_2019_TALENTcamp_Osimo_g3, 8, Delete blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 0.7778, Speed = 100, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcamp_Osimo_g3, 9, No action, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcamp_Osimo_g3, 9, No action, MoveSteering, OnForRotations, Rotations = 0.7778, Speed = 100, Steering = 0, MotorPorts = 123
 ExA_grandi_2019_TALENTcamp_Osimo_g3, 10, No action, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
@@ -1240,12 +1157,8 @@ ExA_piccoli_2018_ICCorinaldo3, 7, Decrease Seconds, MoveSteering, OnForSeconds, 
 ExA_piccoli_2018_ICCorinaldo3, 7, Increase Speed, MoveSteering, OnForSeconds, Seconds = 5, Speed = 41, Steering = 0, MotorPorts = 123
 ExA_piccoli_2018_ICCorinaldo3, 8, No action, MoveSteering, OnForSeconds, Seconds = 5, Speed = 41, Steering = 0, MotorPorts = 123
 ExA_piccoli_2018_ICCorinaldo3, 9, No action, MoveSteering, OnForSeconds, Seconds = 5, Speed = 41, Steering = 0, MotorPorts = 123
-ExA_piccoli_2018_ICCorinaldo3, 9, Change blockname to Sound, Sound, Play Note, Note = A5, Volume = 100, Play Type = 1, Duration = 1
 ExA_piccoli_2018_ICCorinaldo3, 10, No action, MoveSteering, OnForSeconds, Seconds = 5, Speed = 41, Steering = 0, MotorPorts = 123
-ExA_piccoli_2018_ICCorinaldo3, 10, Increase Play Type, Sound, Play Note, Note = A5, Volume = 100, Play Type = 2, Duration = 5
-ExA_piccoli_2018_ICCorinaldo3, 10, Increase Duration, Sound, Play Note, Note = A5, Volume = 100, Play Type = 2, Duration = 5
 ExA_piccoli_2018_ICCorinaldo3, 11, No action, MoveSteering, OnForSeconds, Seconds = 5, Speed = 41, Steering = 0, MotorPorts = 123
-ExA_piccoli_2018_ICCorinaldo3, 11, Change blockname to , ,,,,,
 ExA_piccoli_2018_ICCorinaldo3, 12, No action, MoveSteering, OnForSeconds, Seconds = 5, Speed = 41, Steering = 0, MotorPorts = 123
 ExA_piccoli_2018_ICCorinaldo3, 13, No action, MoveSteering, OnForSeconds, Seconds = 5, Speed = 41, Steering = 0, MotorPorts = 123
 ExA_piccoli_2018_ICCorinaldo4, 0, Change blockname to MoveSteering, MoveSteering, OnForSeconds, Seconds = 1, Speed = 75, Steering = 0, MotorPorts = 123
@@ -2120,29 +2033,12 @@ ExA_piccoli_2019_IC_Alighieri_G3, 11, Increase Rotations, MoveSteering, OnForRot
 ExA_piccoli_2019_IC_Alighieri_G3, 12, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.73, Speed = 25, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_Alighieri_G3, 13, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.76, Speed = 25, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_Alighieri_G3, 14, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.8, Speed = 25, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G3, 15, Change blockname to Display, Display, Image, FileName = Bottom right, X = 0, Y = 0,nan
-ExA_piccoli_2019_IC_Alighieri_G3, 15, Change blockname to MoveSteering, MoveSteering, OnForRotations, Rotations = 5.8, Speed = 25, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G3, 15, Change blockname to Sound, Sound, Play File, FileName = Elephant call, Volume = 100, Play Type = 0,nan
-ExA_piccoli_2019_IC_Alighieri_G3, 16, No action, Display, Image, FileName = Bottom right, X = 0, Y = 0,nan
+ExA_piccoli_2019_IC_Alighieri_G3, 15, No action, MoveSteering, OnForRotations, Rotations = 5.8, Speed = 25, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_Alighieri_G3, 16, No action, MoveSteering, OnForRotations, Rotations = 5.8, Speed = 25, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G3, 16, Change blockname to Display, Display, Image, FileName = Crazy 2, X = 0, Y = 0,nan
-ExA_piccoli_2019_IC_Alighieri_G3, 16, Change blockname to Sound, Sound, Play File, FileName = Elephant call, Volume = 100, Play Type = 0,nan
-ExA_piccoli_2019_IC_Alighieri_G3, 17, No action, Display, Image, FileName = Bottom right, X = 0, Y = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G3, 17, No action, MoveSteering, OnForRotations, Rotations = 5.8, Speed = 25, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G3, 17, No action, Display, Image, FileName = Crazy 2, X = 0, Y = 0,nan
-ExA_piccoli_2019_IC_Alighieri_G3, 17, No action, Sound, Play File, FileName = Elephant call, Volume = 100, Play Type = 0,nan
-ExA_piccoli_2019_IC_Alighieri_G3, 18, No action, Display, Image, FileName = Bottom right, X = 0, Y = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G3, 18, Increase Rotations, MoveSteering, OnForRotations, Rotations = 8.7, Speed = 25, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G3, 18, No action, Display, Image, FileName = Crazy 2, X = 0, Y = 0,nan
-ExA_piccoli_2019_IC_Alighieri_G3, 18, No action, Sound, Play File, FileName = Elephant call, Volume = 100, Play Type = 0,nan
-ExA_piccoli_2019_IC_Alighieri_G3, 19, No action, Display, Image, FileName = Bottom right, X = 0, Y = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G3, 19, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.8, Speed = 25, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G3, 19, No action, Display, Image, FileName = Crazy 2, X = 0, Y = 0,nan
-ExA_piccoli_2019_IC_Alighieri_G3, 19, No action, Sound, Play File, FileName = Elephant call, Volume = 100, Play Type = 0,nan
-ExA_piccoli_2019_IC_Alighieri_G3, 20, No action, Display, Image, FileName = Bottom right, X = 0, Y = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G3, 20, No action, MoveSteering, OnForRotations, Rotations = 5.8, Speed = 25, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G3, 20, No action, Display, Image, FileName = Crazy 2, X = 0, Y = 0,nan
-ExA_piccoli_2019_IC_Alighieri_G3, 20, No action, Sound, Play File, FileName = Elephant call, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G4, 0, Change blockname to MoveSteering, MoveSteering, OnForRotations, Rotations = 0.7, Speed = 50, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_Alighieri_G4, 1, No action, MoveSteering, OnForRotations, Rotations = 0.7, Speed = 50, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_Alighieri_G4, 2, No action, MoveSteering, OnForRotations, Rotations = 0.7, Speed = 50, Steering = 0, MotorPorts = 123
@@ -2161,37 +2057,21 @@ ExA_piccoli_2019_IC_Alighieri_G4, 14, No action, MoveSteering, OnForRotations, R
 ExA_piccoli_2019_IC_Alighieri_G4, 15, No action, MoveSteering, OnForRotations, Rotations = 3.7, Speed = 50, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_Alighieri_G4, 16, No action, MoveSteering, OnForRotations, Rotations = 3.7, Speed = 50, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_Alighieri_G4, 17, No action, MoveSteering, OnForRotations, Rotations = 3.7, Speed = 50, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 0, Change blockname to Sound, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 0, Change blockname to MoveSteering, MoveSteering, OnForRotations, Rotations = 0.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 1, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 1, Increase Rotations, MoveSteering, OnForRotations, Rotations = 13.3, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 2, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 2, Increase Rotations, MoveSteering, OnForRotations, Rotations = 16.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 3, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 3, No action, MoveSteering, OnForRotations, Rotations = 16.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 4, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 4, No action, MoveSteering, OnForRotations, Rotations = 16.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 5, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 5, No action, MoveSteering, OnForRotations, Rotations = 16.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 6, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 6, No action, MoveSteering, OnForRotations, Rotations = 16.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 7, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 7, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 13.3, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 8, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 8, Increase Rotations, MoveSteering, OnForRotations, Rotations = 16.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 9, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 9, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 10, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 10, No action, MoveSteering, OnForRotations, Rotations = 6.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 11, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 11, No action, MoveSteering, OnForRotations, Rotations = 6.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 12, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 12, No action, MoveSteering, OnForRotations, Rotations = 6.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 13, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 13, No action, MoveSteering, OnForRotations, Rotations = 6.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 14, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 14, No action, MoveSteering, OnForRotations, Rotations = 6.7, Speed = 100, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_Alighieri_G5, 15, No action, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_Alighieri_G5, 15, No action, MoveSteering, OnForRotations, Rotations = 6.7, Speed = 100, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_Alighieri_G6, 0, Change blockname to MoveSteering, MoveSteering, OnForSeconds, Seconds = 2.3, Speed = 100, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_Alighieri_G6, 1, No action, MoveSteering, OnForSeconds, Seconds = 2.3, Speed = 100, Steering = 0, MotorPorts = 123
@@ -2379,14 +2259,10 @@ ExA_piccoli_2019_IC_NovelliNatalucci_G11, 3, No action, MoveSteering, OnForSecon
 ExA_piccoli_2019_IC_NovelliNatalucci_G11, 4, No action, MoveSteering, OnForSeconds, Seconds = 1, Speed = 50, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_NovelliNatalucci_G11, 5, No action, MoveSteering, OnForSeconds, Seconds = 1, Speed = 50, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_NovelliNatalucci_G11, 6, No action, MoveSteering, OnForSeconds, Seconds = 1, Speed = 50, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_NovelliNatalucci_G11, 7, Change blockname to Sound, Sound, Play File, FileName = Dog sniff, Volume = 100, Play Type = 0,nan
-ExA_piccoli_2019_IC_NovelliNatalucci_G11, 7, Change blockname to MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 50, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_NovelliNatalucci_G11, 8, No action, Sound, Play File, FileName = Dog sniff, Volume = 100, Play Type = 0,nan
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 7, Change type OnForRotations, MoveSteering, OnForRotations, Rotations = 1, Speed = 50, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_NovelliNatalucci_G11, 8, No action, MoveSteering, OnForRotations, Rotations = 1, Speed = 50, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_NovelliNatalucci_G11, 9, No action, Sound, Play File, FileName = Dog sniff, Volume = 100, Play Type = 0,nan
 ExA_piccoli_2019_IC_NovelliNatalucci_G11, 9, No action, MoveSteering, OnForRotations, Rotations = 1, Speed = 50, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_NovelliNatalucci_G11, 10, Change blockname to MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 50, Steering = 0, MotorPorts = 123
-ExA_piccoli_2019_IC_NovelliNatalucci_G11, 10, Change blockname to , ,,,,,
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 10, No action, MoveSteering, OnForRotations, Rotations = 1, Speed = 50, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_NovelliNatalucci_G11, 11, Increase Rotations, MoveSteering, OnForRotations, Rotations = 33.33, Speed = 50, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_NovelliNatalucci_G11, 12, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7, Speed = 50, Steering = 0, MotorPorts = 123
 ExA_piccoli_2019_IC_NovelliNatalucci_G11, 13, No action, MoveSteering, OnForRotations, Rotations = 7, Speed = 50, Steering = 0, MotorPorts = 123

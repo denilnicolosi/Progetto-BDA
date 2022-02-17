@@ -18,13 +18,11 @@ def diff_param(par1,par2):
     except ValueError:
         return "Change"+ name_param
  
-def add_tracelist(activity, row, increment_timestamp):
+def add_tracelist(activity, row):
     global trace_list
-    global timestamp
     row=group_name+", "+ str(timestamp) + ", " + activity + ", " + ",".join(row)
     trace_list=np.append(trace_list, [row.split(",")],axis=0)
-    #if(increment_timestamp):
-        #timestamp+=1
+    
 
 
 def difference(row1, row2):
@@ -35,29 +33,33 @@ def difference(row1, row2):
     if(np.array_equal(row1,row2)):
         activity = "No action"
         if row1[0]!="":
-            add_tracelist(activity,row2, True)
+            add_tracelist(activity,row2)
     else:
         if(row1[0]!=row2[0]):
-            activity = "Change blockname to "+row2[0]
-            add_tracelist(activity,row2, True)
+            if(row2[0]!=""):
+                activity = "Change blockname to "+row2[0]
+                add_tracelist(activity,row2)
+            else:
+                activity = "Delete blockname "+row1[0]
+                add_tracelist(activity,row1)    
         else:
             if(row1[1]!=row2[1]):
                 activity = "Change type"+row2[1]
-                add_tracelist(activity,row2, True)
+                add_tracelist(activity,row2)
             else:
                 if(row1[2]!=row2[2]):
                     activity= diff_param(row1[2],row2[2])
-                    add_tracelist(activity,row2, False)
+                    add_tracelist(activity,row2)
                 if(row1[3]!=row2[3]):              
                     activity= diff_param(row1[3],row2[3])
-                    add_tracelist(activity,row2, False)
+                    add_tracelist(activity,row2)
                 if(row1[4]!=row2[4]):
                     activity= diff_param(row1[4],row2[4])
-                    add_tracelist(activity,row2, False)
+                    add_tracelist(activity,row2)
                 if(row1[5]!=row2[5]):
                     activity= diff_param(row1[5],row2[5])
-                    add_tracelist(activity,row2, False)
-                #timestamp= timestamp +1   
+                    add_tracelist(activity,row2)
+                  
 
 file_output="output.csv"
 #np.set_printoptions(threshold=sys.maxsize)
@@ -69,8 +71,14 @@ for file in os.listdir(directory):
     for file2 in os.listdir(directory+"//"+filename):
         if file2.endswith(".rtf"):
             path=directory+"//"+filename+"//"+file2
-            #path=".//ExA//grandi//2018_LiceoVoltaFellini1F.rtf"
+            #path=".//ExA//grandi//2018_LiceoGalilei2.rtf"
             df1 = pandas.read_csv(path, encoding ="utf_8")
+            
+            #Filtro azioni inutili per il task
+            df1 = df1.drop(df1[df1.Blockname == "Sound"].index)
+            df1 = df1.drop(df1[df1.Blockname == "Brick Light"].index)
+            df1 = df1.drop(df1[df1.Blockname == "Display"].index)            
+            
             group_name=path.replace("//","_")
             group_name=group_name[2:len(group_name)-4]
             total_attempt=0
@@ -99,15 +107,12 @@ for file in os.listdir(directory):
                     for value in df1.iloc[i].values:
                         value=str(value).replace(";","")                        
                         instruction[attempt][index_instruction][j]=value
-                        j=j+1
-                        
-                        
-                    #instruction[attempt][index_instruction]=df1.iloc[i].values
+                        j=j+1  
                     index_instruction=index_instruction+1       
-            print(instruction)
-            timestamp=0
+            #print(instruction)
             #aggiungo una riga vuota per forzare la scrittura gia della prima riga
             instruction=np.insert(instruction, 0, ["","","","","",""],axis=0)
+            timestamp=0            
             for i in range(len(instruction)-1):
                 for j in range(len(instruction[i])):
                     difference(instruction[i][j], instruction[i+1][j])     
