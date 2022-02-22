@@ -1,9 +1,13 @@
 from asyncio.windows_events import NULL
 from inspect import isclass, trace
+from re import A
 from statistics import mode
 import pandas
 import numpy as np
 import os
+import sys
+
+np.set_printoptions(threshold=sys.maxsize)
 
 def diff_param(par1,par2):
     name_param=par1.split(" = ")[0]
@@ -22,8 +26,6 @@ def add_tracelist(activity, row):
     global trace_list
     row=group_name+", "+ str(timestamp) + ", " + activity + ", " + ",".join(row)
     trace_list=np.append(trace_list, [row.split(",")],axis=0)
-    
-
 
 def difference(row1, row2):
     activity=""
@@ -36,17 +38,24 @@ def difference(row1, row2):
             add_tracelist(activity,row2)
     else:
         if(row1[0]!=row2[0]):
-            if(row2[0]!=""):
+            if(row2[0]!="" and row1[0]!=""):
                 activity = "Change blockname to "+row2[0]
                 add_tracelist(activity,row2)
-            else:
+            elif(row1[0]!=""):
                 activity = "Delete blockname "+row1[0]
-                add_tracelist(activity,row1)    
-        else:
-            if(row1[1]!=row2[1]):
-                activity = "Change type"+row2[1]
-                add_tracelist(activity,row2)
+                add_tracelist(activity,row1)
             else:
+                activity = "Add blockname "+row2[0]
+                add_tracelist(activity,row2)
+        else:
+            #controllo se non ha il "=", altrimenti non è tipo ma parametro
+            if(row1[1]!=row2[1] and str(row2[1]).find('=')<0):                
+                    activity = "Change type"+row2[1]
+                    add_tracelist(activity,row2)
+            else:                
+                if(str(row2[1]).find('=')>0 and row1[1]!=row2[1]):
+                    activity= diff_param(row1[1],row2[1])
+                    add_tracelist(activity,row2)                    
                 if(row1[2]!=row2[2]):
                     activity= diff_param(row1[2],row2[2])
                     add_tracelist(activity,row2)
@@ -59,32 +68,70 @@ def difference(row1, row2):
                 if(row1[5]!=row2[5]):
                     activity= diff_param(row1[5],row2[5])
                     add_tracelist(activity,row2)
+                    
+def diff_param_value(par1,par2):
+    try:
+        score=20
+        if(par1!=par2):
+            name_param=par1.split(" = ")[0]
+            val1=par1.split(" = ")[1]
+            val2=par2.split(" = ")[1]
+            
+            score-=abs(float(val1)-float(val2))
+            if score<0:
+                score=0    
+        
+        return score
+    except ValueError:
+        return 0      
+    except IndexError:
+        return 0 
+    except :
+        return 0        
                   
+def find_score(row1, row2):
+    score=0
+    if(np.array_equal(row1,row2)):
+        score=100
+    elif row1[0]!=row2[0]: #if blockname change
+        score=0
+    else:                
+        score+=10 #perchè il blockname è uguale                     
+        #controllo se non ha il "=", altrimenti non è tipo ma parametro
+        if(row1[1]==row2[1] and str(row2[1]).find('=')<0):                
+            score+=10                    
+        if(str(row2[1]).find('=')>0):
+            score+=diff_param_value(row1[1],row2[1])                                 
+    
+        score+=diff_param_value(row1[2],row2[2])                    
+        score+=diff_param_value(row1[3],row2[3])    
+        score+=diff_param_value(row1[4],row2[4])    
+        score+=diff_param_value(row1[5],row2[5])
+    return score
 
-file_output="output.csv"
-#np.set_printoptions(threshold=sys.maxsize)
 directory=".//ExA"
 trace_list= [["Case_Id","Timestamp","Activity","Blockname","Type","1st-param","2st-param","3st-param","4st-param"]]
-header=True
+
 for file in os.listdir(directory):
     filename=os.fsdecode(file)
     for file2 in os.listdir(directory+"//"+filename):
         if file2.endswith(".rtf"):
             path=directory+"//"+filename+"//"+file2
-            #path=".//ExA//grandi//2018_LiceoGalilei2.rtf"
+            #path=".//ExA//grandi//2018_LiceoVoltaFellini1F.rtf"
+            #path=".//ExA//grandi//2018_LiceoGalilei1_copy.rtf"
             df1 = pandas.read_csv(path, encoding ="utf_8")
             
             #Filtro azioni inutili per il task
-            df1 = df1.drop(df1[df1.Blockname == "Sound"].index)
-            df1 = df1.drop(df1[df1.Blockname == "Brick Light"].index)
-            df1 = df1.drop(df1[df1.Blockname == "Display"].index)            
+            #df1 = df1.drop(df1[df1.Blockname == "Sound"].index)
+            #df1 = df1.drop(df1[df1.Blockname == "Brick Light"].index)
+            #df1 = df1.drop(df1[df1.Blockname == "Display"].index)            
             
             group_name=path.replace("//","_")
             group_name=group_name[2:len(group_name)-4]
+            
             total_attempt=0
             max_instruction=0
-            index_instruction=0
-            
+            index_instruction=0            
             for i in range(len(df1)):
                 if df1._get_value(i,0, takeable = True)=="STOP PROGRAM;":
                     total_attempt = total_attempt+1
@@ -109,26 +156,59 @@ for file in os.listdir(directory):
                         instruction[attempt][index_instruction][j]=value
                         j=j+1  
                     index_instruction=index_instruction+1       
-            #print(instruction)
-            #aggiungo una riga vuota per forzare la scrittura gia della prima riga
-            instruction=np.insert(instruction, 0, ["","","","","",""],axis=0)
-            timestamp=0            
-            for i in range(len(instruction)-1):
-                for j in range(len(instruction[i])):
-                    difference(instruction[i][j], instruction[i+1][j])     
-                timestamp+=1              
-
-        #break;
-    #break;
+                    
+            #aggiungo i primi blocchi
+            timestamp=0  
+            for i in range(len(instruction[0])):
+                if(instruction[0][i][0]!=""):
+                    add_tracelist("Add blockname "+instruction[0][i][0],instruction[0][i])
             
-pandas.DataFrame(trace_list).to_csv(file_output, header=False, index=False)
-    
-    
+                    
+            for i in range(len(instruction)-1): #ciclo sugli attemp               
+                timestamp+=1
+                score_list=np.empty((len(instruction[i]),len(instruction[i])))
+                for j in range(len(instruction[i])): #instruction                     
+                    for k in range(len(instruction[i])): #instruction 
+                        #join confronto
+                        score_list[j][k]=find_score(instruction[i][j], instruction[i+1][k])                                           
+                        #print(score_list[j][k],j,k)
+                                  
+                list_index=[]       
+                for j in range(len(instruction[i])): #instruction      
+                    #print("Score list:\n"+ str(score_list))    
+                    #print("Max:",score_list.max())
+                    max_index=np.where(score_list==score_list.max())    
+                    #print("Max index:",max_index[0][0],max_index[1][0])
+                    list_index.append([max_index[0][0],max_index[1][0]])
+                    score_list[:,max_index[1][0]]=-1
+                    score_list[max_index[0][0],:]=-1                
+                          
+               
+                for index in list_index:
+                    #print("-----------------------------------------")
+                    #print("riga1: ",str(instruction[i][index[0]]))
+                    #print("riga2: ",str(instruction[i+1][index[1]]))
+                    difference(instruction[i][index[0]],instruction[i+1][index[1]])  
 
-### colonne
-### caseid; timestamp; activity;Blockname, Type, 1st-param, 2nd-param, 3rd-param, 4th-param 
-### 2018_galilei_1;1;Change blockname to moveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123; 
-### 2018_galilei_1;2;No action, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123; 
-### 2018_galilei_1;3;Increse rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 75, Steering = 0, MotorPorts = 123;
-### 2018_galilei_1;3;decrease speed, MoveSteering, OnForRotations, Rotations = 5, Speed = 75, Steering = 0, MotorPorts = 123;
-### 2018_galilei_1;4;change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 1, Speed = 75, Steering = 0, MotorPorts = 123;
+     #   break;
+    #break;
+
+
+    
+# scrittura output su file in base al risultato
+df_result = pandas.read_csv("y_tesi_completo_exA.csv", encoding ="utf_8")
+trace_list_wrong = trace_list_good = [["Case_Id","Timestamp","Activity","Blockname","Type","1st-param","2st-param","3st-param","4st-param"]]
+for row in trace_list:
+    start_index=row[0].find("_",row[0].index("_")+1)+1
+    group_name=row[0][start_index:]
+    res=df_result.loc[df_result["ID"]==group_name]    
+    if(not res.empty): 
+        if(res.Y.values[0]==0):                       
+            trace_list_wrong=np.append(trace_list_wrong, [list(row)],axis=0)
+        else:
+            trace_list_good=np.append(trace_list_good, [list(row)],axis=0)         
+
+pandas.DataFrame(trace_list_good).to_csv("good.csv", header=False, index=False)
+pandas.DataFrame(trace_list_wrong).to_csv("wrong.csv", header=False, index=False)
+pandas.DataFrame(trace_list).to_csv("all.csv", header=False, index=False)    
+    

@@ -1,7 +1,7 @@
 import pandas as pd
 import pm4py
 import os
-#os.environ["PATH"] += os.pathsep + 'C:\Program Files\Graphviz\bin'
+from pm4py.algo.discovery.inductive import algorithm as inductive_miner
 
 event_log = pd.read_csv("output.csv", encoding ="utf_8")
 event_log = pm4py.format_dataframe(event_log, case_id='Case_Id',timestamp_key='Timestamp',activity_key='Activity')
@@ -15,17 +15,18 @@ log = pm4py.read_xes('log.xes')
 #dfg, start_activities, end_activities = pm4py.discover_dfg(log)
 #pm4py.view_dfg(dfg, start_activities, end_activities)
 
-#process_model = pm4py.discover_bpmn_inductive(log, 0.001)
+#process_model = pm4py.discover_bpmn_inductive(log, 0.1)
 #pm4py.view_bpmn(process_model)
 
 #process_tree = pm4py.discover_tree_inductive(log)
 #pm4py.view_process_tree(process_tree)
 
-map = pm4py.discover_heuristics_net(log, dependency_threshold=0.9)
-pm4py.view_heuristics_net(map)
+#map = pm4py.discover_heuristics_net(log, dependency_threshold=0.9)
+#pm4py.view_heuristics_net(map)
 
-#net2, im2, fm2 = pm4py.discover_petri_net_inductive(log)
-#pm4py.view_petri_net(net2, im2, fm2)
+#net2, im2, fm2 = pm4py.discover_petri_net_inductive(log, 0.7)
+net, initial_marking, final_marking = inductive_miner.apply(log, variant=inductive_miner.Variants.IMf, parameters={inductive_miner.Variants.IMf.value.Parameters.NOISE_THRESHOLD: 0.5})
+pm4py.view_petri_net(net, initial_marking, final_marking)
 
 #net2, im2, fm2 = pm4py.discover_petri_net_alpha_plus(log)
 #pm4py.view_petri_net(net2, im2, fm2)
