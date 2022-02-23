@@ -1,12 +1,5 @@
 MODIFICHE:
 
-
-Meccanismo di somiglianza da implementare 
-Se il numero di blocchi sono gli stessi, mettiamo un change. Altrimenti add o remove
-Nel caso in cui i blocchi aumentano o diminuiscono, mettiamo un add o un remove.
-Nel remove metto la riga che è stata rimossa.
-
-
 Calcolare la fitness, generalization e precision per capire , woflan workflowanalysis per valutare la sound del modello.
 Usare un inductive, o heuristic miner, fare petri net
 Deve avere una buona fitness, generalization, precision ci interesse, semplicity buon compresso tra questi 4, riporto in una tabella 

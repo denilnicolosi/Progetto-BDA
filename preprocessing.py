@@ -94,7 +94,10 @@ def find_score(row1, row2):
     if(np.array_equal(row1,row2)):
         score=100
     elif row1[0]!=row2[0]: #if blockname change
-        score=0
+        if (row1[0]!="" and row2[0]!=""):
+            score=1            
+        else:
+            score=0
     else:                
         score+=10 #perchè il blockname è uguale                     
         #controllo se non ha il "=", altrimenti non è tipo ma parametro
@@ -116,9 +119,9 @@ for file in os.listdir(directory):
     filename=os.fsdecode(file)
     for file2 in os.listdir(directory+"//"+filename):
         if file2.endswith(".rtf"):
-            path=directory+"//"+filename+"//"+file2
-            #path=".//ExA//grandi//2018_LiceoVoltaFellini1F.rtf"
-            #path=".//ExA//grandi//2018_LiceoGalilei1_copy.rtf"
+            #path=directory+"//"+filename+"//"+file2
+            #path=".//ExA//grandi//2018_LiceoGalilei1.rtf"
+            path=".//ExA//grandi//2019_TALENTcampJesi_g3.rtf"
             df1 = pandas.read_csv(path, encoding ="utf_8")
             
             #Filtro azioni inutili per il task
@@ -163,13 +166,13 @@ for file in os.listdir(directory):
                 if(instruction[0][i][0]!=""):
                     add_tracelist("Add blockname "+instruction[0][i][0],instruction[0][i])
             
-                    
+            # costruisco l'edit log con le differenze tra i tentativi                    
             for i in range(len(instruction)-1): #ciclo sugli attemp               
                 timestamp+=1
                 score_list=np.empty((len(instruction[i]),len(instruction[i])))
                 for j in range(len(instruction[i])): #instruction                     
                     for k in range(len(instruction[i])): #instruction 
-                        #join confronto
+                        #popolo la matrice di punteggi 
                         score_list[j][k]=find_score(instruction[i][j], instruction[i+1][k])                                           
                         #print(score_list[j][k],j,k)
                                   
@@ -190,8 +193,8 @@ for file in os.listdir(directory):
                     #print("riga2: ",str(instruction[i+1][index[1]]))
                     difference(instruction[i][index[0]],instruction[i+1][index[1]])  
 
-     #   break;
-    #break;
+        break;
+    break;
 
 
     

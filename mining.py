@@ -2,8 +2,14 @@ import pandas as pd
 import pm4py
 import os
 from pm4py.algo.discovery.inductive import algorithm as inductive_miner
+from pm4py.algo.evaluation.replay_fitness import algorithm as replay_fitness_evaluator
+from pm4py.algo.evaluation.precision import algorithm as precision_evaluator
+from pm4py.algo.evaluation.generalization import algorithm as generalization_evaluator
+from pm4py.algo.evaluation.simplicity import algorithm as simplicity_evaluator
+from pm4py.algo.analysis.woflan import algorithm as woflan
 
-event_log = pd.read_csv("output.csv", encoding ="utf_8")
+
+event_log = pd.read_csv("all.csv", encoding ="utf_8")
 event_log = pm4py.format_dataframe(event_log, case_id='Case_Id',timestamp_key='Timestamp',activity_key='Activity')
 start_activty = pm4py.get_start_activities(event_log)
 end_activity = pm4py.get_end_activities(event_log)
@@ -25,8 +31,31 @@ log = pm4py.read_xes('log.xes')
 #pm4py.view_heuristics_net(map)
 
 #net2, im2, fm2 = pm4py.discover_petri_net_inductive(log, 0.7)
-net, initial_marking, final_marking = inductive_miner.apply(log, variant=inductive_miner.Variants.IMf, parameters={inductive_miner.Variants.IMf.value.Parameters.NOISE_THRESHOLD: 0.5})
-pm4py.view_petri_net(net, initial_marking, final_marking)
+
+metriche = []
+
+for i in range (1,19,1):
+    noise=i/20+0.05
+    net, initial_marking, final_marking = inductive_miner.apply(log, variant=inductive_miner.Variants.IMf, parameters={inductive_miner.Variants.IMf.value.Parameters.NOISE_THRESHOLD: noise})
+    #pm4py.view_petri_net(net, initial_marking, final_marking)
+
+    metrica={}
+    metrica['noise']= noise
+    metrica['fitness'] = replay_fitness_evaluator.apply(log, net, initial_marking, final_marking, variant=replay_fitness_evaluator.Variants.ALIGNMENT_BASED)["averageFitness"]
+    metrica['precision'] = precision_evaluator.apply(log, net, initial_marking, final_marking, variant=precision_evaluator.Variants.ALIGN_ETCONFORMANCE)
+    metrica['generalization'] = generalization_evaluator.apply(log, net, initial_marking, final_marking)
+    metrica['simplicity'] = simplicity_evaluator.apply(net)
+    metrica['is_sound'] = woflan.apply(net, initial_marking, final_marking, parameters={woflan.Parameters.RETURN_ASAP_WHEN_NOT_SOUND: True,
+                                                    woflan.Parameters.PRINT_DIAGNOSTICS: False,
+                                                    woflan.Parameters.RETURN_DIAGNOSTICS: False})
+    metriche.append(metrica)    
+    
+
+
+pd.DataFrame(metriche).to_csv("metriche.csv", header=True, index=False)
+
+
+
 
 #net2, im2, fm2 = pm4py.discover_petri_net_alpha_plus(log)
 #pm4py.view_petri_net(net2, im2, fm2)
