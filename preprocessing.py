@@ -119,9 +119,9 @@ for file in os.listdir(directory):
     filename=os.fsdecode(file)
     for file2 in os.listdir(directory+"//"+filename):
         if file2.endswith(".rtf"):
-            #path=directory+"//"+filename+"//"+file2
+            path=directory+"//"+filename+"//"+file2
             #path=".//ExA//grandi//2018_LiceoGalilei1.rtf"
-            path=".//ExA//grandi//2019_TALENTcampJesi_g3.rtf"
+            #path=".//ExA//grandi//2019_TALENTcampJesi_g3.rtf"
             df1 = pandas.read_csv(path, encoding ="utf_8")
             
             #Filtro azioni inutili per il task
@@ -193,8 +193,8 @@ for file in os.listdir(directory):
                     #print("riga2: ",str(instruction[i+1][index[1]]))
                     difference(instruction[i][index[0]],instruction[i+1][index[1]])  
 
-        break;
-    break;
+        #break;
+    #break;
 
 
     
