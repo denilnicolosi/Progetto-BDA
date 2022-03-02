@@ -1,0 +1,242 @@
+Case_Id,Timestamp,Activity,Blockname,Type,1st-param,2st-param,3st-param,4st-param
+ExA_piccoli_2018_ICAlighieri1, 0, START CASE_ID,,,,,,
+ExA_piccoli_2018_ICAlighieri1, 0, Add blockname MoveSteering, MoveSteering, OnUnlimited, Speed = 100, Steering = 0, MotorPorts = 123,nan
+ExA_piccoli_2018_ICAlighieri1, 5, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 4, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 6, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 7, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 24, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 8, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 9, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 10, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 11, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.6, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 13, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.73, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 14, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.71, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 24, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 5.4, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 27, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.7, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 46, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.73, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 48, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.74, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 49, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.77, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 54, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.773, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 60, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.775, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 62, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.77, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 64, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.774, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri1, 71, END CASE_ID,,,,,,
+ExA_piccoli_2018_ICAlighieri5, 0, START CASE_ID,,,,,,
+ExA_piccoli_2018_ICAlighieri5, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 20, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri5, 2, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 10, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri5, 6, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri5, 9, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.1, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri5, 11, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri5, 13, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.8, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri5, 14, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.9, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri5, 22, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.8, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri5, 36, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.7, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri5, 37, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.8, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICAlighieri5, 54, END CASE_ID,,,,,,
+ExA_piccoli_2018_ICMontecassiano5, 0, START CASE_ID,,,,,,
+ExA_piccoli_2018_ICMontecassiano5, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 4, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICMontecassiano5, 6, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICMontecassiano5, 29, END CASE_ID,,,,,,
+ExA_piccoli_2018_ICMontecassiano6, 0, START CASE_ID,,,,,,
+ExA_piccoli_2018_ICMontecassiano6, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICMontecassiano6, 1, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 20, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICMontecassiano6, 1, Increase Speed, MoveSteering, OnForSeconds, Seconds = 20, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICMontecassiano6, 1, END CASE_ID,,,,,,
+ExA_piccoli_2018_ICNovelliNatalucci2, 0, START CASE_ID,,,,,,
+ExA_piccoli_2018_ICNovelliNatalucci2, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci2, 4, Increase Rotations, MoveSteering, OnForRotations, Rotations = 10, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci2, 16, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci2, 20, END CASE_ID,,,,,,
+ExA_piccoli_2018_ICNovelliNatalucci3, 0, START CASE_ID,,,,,,
+ExA_piccoli_2018_ICNovelliNatalucci3, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci3, 3, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci3, 6, Increase Rotations, MoveSteering, OnForRotations, Rotations = 10, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci3, 7, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci3, 8, Increase Rotations, MoveSteering, OnForRotations, Rotations = 8, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci3, 9, Increase Rotations, MoveSteering, OnForRotations, Rotations = 8.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci3, 11, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci3, 12, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7.3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci3, 13, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci3, 14, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.9, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci3, 17, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6.91, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci3, 23, END CASE_ID,,,,,,
+ExA_piccoli_2018_ICNovelliNatalucci4, 0, START CASE_ID,,,,,,
+ExA_piccoli_2018_ICNovelliNatalucci4, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci4, 2, Increase Rotations, MoveSteering, OnForRotations, Rotations = 50, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci4, 2, Increase Speed, MoveSteering, OnForRotations, Rotations = 50, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci4, 13, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 15, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci4, 13, Decrease Speed, MoveSteering, OnForRotations, Rotations = 15, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci4, 20, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7.5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci4, 77, END CASE_ID,,,,,,
+ExA_piccoli_2018_ICNovelliNatalucci5, 0, START CASE_ID,,,,,,
+ExA_piccoli_2018_ICNovelliNatalucci5, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci5, 3, Increase Rotations, MoveSteering, OnForRotations, Rotations = 70, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci5, 12, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 1, Speed = 30, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci5, 12, Decrease Speed, MoveSteering, OnForRotations, Rotations = 1, Speed = 30, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci5, 14, Increase Rotations, MoveSteering, OnForRotations, Rotations = 10, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci5, 14, Increase Speed, MoveSteering, OnForRotations, Rotations = 10, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci5, 15, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci5, 16, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 4, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci5, 17, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci5, 18, Increase Rotations, MoveSteering, OnForRotations, Rotations = 7.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci5, 22, END CASE_ID,,,,,,
+ExA_piccoli_2018_ICNovelliNatalucci6, 0, START CASE_ID,,,,,,
+ExA_piccoli_2018_ICNovelliNatalucci6, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 15, Speed = 70, Steering = 0, MotorPorts = 123
+ExA_piccoli_2018_ICNovelliNatalucci6, 96, END CASE_ID,,,,,,
+ExA_piccoli_2019_ICLargoCocconi4E_G1, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_ICLargoCocconi4E_G1, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 6, Speed = 29, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G1, 16, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 9.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G1, 16, Increase Speed, MoveSteering, OnForSeconds, Seconds = 9.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G1, 17, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G1, 18, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 5, Speed = 47, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G1, 19, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 5, Speed = 37, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G1, 20, END CASE_ID,,,,,,
+ExA_piccoli_2019_ICLargoCocconi4E_G3, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_ICLargoCocconi4E_G3, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G3, 4, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 7.2, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G3, 5, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3.8, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G3, 6, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G3, 8, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.2, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G3, 9, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 4.2, Speed = 47, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G3, 10, Increase Speed, MoveSteering, OnForSeconds, Seconds = 4.2, Speed = 49, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G3, 11, Increase Speed, MoveSteering, OnForSeconds, Seconds = 4.2, Speed = 52, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G3, 12, END CASE_ID,,,,,,
+ExA_piccoli_2019_ICLargoCocconi4E_G4, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_ICLargoCocconi4E_G4, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 100, Speed = 60, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G4, 1, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 50, Speed = 60, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G4, 2, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 10, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G4, 2, Decrease Speed, MoveSteering, OnForRotations, Rotations = 10, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G4, 4, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G4, 5, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 4, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G4, 6, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G4, 8, END CASE_ID,,,,,,
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 15, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 6, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 15, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 6, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 20, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 11, Speed = 27, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 20, Increase Speed, MoveSteering, OnForSeconds, Seconds = 11, Speed = 27, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 22, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 10, Speed = 37, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 22, Increase Speed, MoveSteering, OnForSeconds, Seconds = 10, Speed = 37, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 23, Change type OnForRotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 17, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 25, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 17, Steering = 100, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 29, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 50, Speed = 14, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 29, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 50, Speed = 14, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 29, Decrease Steering, MoveSteering, OnForSeconds, Seconds = 50, Speed = 14, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICLargoCocconi4E_G6, 29, END CASE_ID,,,,,,
+ExA_piccoli_2019_ICSerraSanQuirico6, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_ICSerraSanQuirico6, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 25, Speed = 50, Steering = 0, MotorPorts = 113
+ExA_piccoli_2019_ICSerraSanQuirico6, 2, Increase MotorPorts, MoveSteering, OnForSeconds, Seconds = 25, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICSerraSanQuirico6, 4, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 10, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICSerraSanQuirico6, 5, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICSerraSanQuirico6, 7, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICSerraSanQuirico6, 8, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.2, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICSerraSanQuirico6, 10, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICSerraSanQuirico6, 12, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.3, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICSerraSanQuirico6, 14, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.2, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_ICSerraSanQuirico6, 15, END CASE_ID,,,,,,
+ExA_piccoli_2019_IC_Alighieri_G1, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_IC_Alighieri_G1, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 1.3, Speed = 56.8, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 1, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.7, Speed = 47, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 1, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 2.7, Speed = 47, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 2, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3.3, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 2, Increase Speed, MoveSteering, OnForSeconds, Seconds = 3.3, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 3, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 1.3, Speed = 56.8, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 3, Increase Speed, MoveSteering, OnForSeconds, Seconds = 1.3, Speed = 56.8, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 4, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.7, Speed = 47, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 4, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 2.7, Speed = 47, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 5, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3.3, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 5, Increase Speed, MoveSteering, OnForSeconds, Seconds = 3.3, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 6, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.7, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 7, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 8, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.4, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 9, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 12, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.3, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 13, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.25, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 14, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.23, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G1, 17, END CASE_ID,,,,,,
+ExA_piccoli_2019_IC_Alighieri_G4, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_IC_Alighieri_G4, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 0.7, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G4, 9, Increase Rotations, MoveSteering, OnForRotations, Rotations = 1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G4, 11, Increase Rotations, MoveSteering, OnForRotations, Rotations = 3.7, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G4, 17, END CASE_ID,,,,,,
+ExA_piccoli_2019_IC_Alighieri_G5, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_IC_Alighieri_G5, 0, Add blockname Sound, Sound, Play File, FileName = T-rex roar, Volume = 100, Play Type = 0,nan
+ExA_piccoli_2019_IC_Alighieri_G5, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 0.7, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G5, 1, Increase Rotations, MoveSteering, OnForRotations, Rotations = 13.3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G5, 2, Increase Rotations, MoveSteering, OnForRotations, Rotations = 16.7, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G5, 7, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 13.3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G5, 8, Increase Rotations, MoveSteering, OnForRotations, Rotations = 16.7, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G5, 9, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.7, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G5, 15, END CASE_ID,,,,,,
+ExA_piccoli_2019_IC_Alighieri_G6, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_IC_Alighieri_G6, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 2.3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G6, 2, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 1.8, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G6, 3, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G6, 4, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G6, 6, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.7, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G6, 7, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.73, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G6, 10, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.9, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G6, 11, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.93, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G6, 16, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.96, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_Alighieri_G6, 22, END CASE_ID,,,,,,
+ExA_piccoli_2019_IC_FalconaraCentro_g4, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_IC_FalconaraCentro_g4, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 10, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_FalconaraCentro_g4, 2, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 6, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_FalconaraCentro_g4, 3, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_FalconaraCentro_g4, 7, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_FalconaraCentro_g4, 8, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_FalconaraCentro_g4, 9, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_FalconaraCentro_g4, 10, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 5, Speed = 45, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_FalconaraCentro_g4, 11, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4, Speed = 45, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_FalconaraCentro_g4, 12, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 46, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_FalconaraCentro_g4, 12, Increase Speed, MoveSteering, OnForSeconds, Seconds = 5, Speed = 46, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_FalconaraCentro_g4, 13, END CASE_ID,,,,,,
+ExA_piccoli_2019_IC_NovelliNatalucci_G10, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_IC_NovelliNatalucci_G10, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 8.67, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G10, 1, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.33, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G10, 2, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G10, 3, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.67, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G10, 9, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G10, 17, END CASE_ID,,,,,,
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 7, Change type OnForRotations, MoveSteering, OnForRotations, Rotations = 1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 7, Add blockname Sound, Sound, Play File, FileName = Dog sniff, Volume = 100, Play Type = 0,nan
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 10, Delete blockname Sound, Sound, Play File, FileName = Dog sniff, Volume = 100, Play Type = 0,nan
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 11, Increase Rotations, MoveSteering, OnForRotations, Rotations = 33.33, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 12, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 15, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 3.67, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 17, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 3.53, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 20, Increase Rotations, MoveSteering, OnForRotations, Rotations = 3.67, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 22, Increase Rotations, MoveSteering, OnForRotations, Rotations = 3.73, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 24, Increase Rotations, MoveSteering, OnForRotations, Rotations = 3.8, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G11, 28, END CASE_ID,,,,,,
+ExA_piccoli_2019_IC_NovelliNatalucci_G12, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_IC_NovelliNatalucci_G12, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 9.53, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G12, 2, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.86, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G12, 5, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 4.9, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G12, 10, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.1, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G12, 13, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.2, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G12, 14, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G12, 20, END CASE_ID,,,,,,
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 3.33, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 2, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.66, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 2, Increase Speed, MoveSteering, OnForSeconds, Seconds = 4.66, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 3, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3.33, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 5, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 7, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.66, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 8, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 40, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 8, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 3, Speed = 40, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 9, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3.33, Speed = 40, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 10, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3.66, Speed = 40, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 12, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 7.33, Speed = 14, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 12, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 7.33, Speed = 14, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 14, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.66, Speed = 40, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 14, Increase Speed, MoveSteering, OnForSeconds, Seconds = 4.66, Speed = 40, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G13, 15, END CASE_ID,,,,,,
+ExA_piccoli_2019_IC_NovelliNatalucci_G9, 0, START CASE_ID,,,,,,
+ExA_piccoli_2019_IC_NovelliNatalucci_G9, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 26.67, Speed = 5, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G9, 2, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.33, Speed = 5, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G9, 3, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6.67, Speed = 5, Steering = 0, MotorPorts = 123
+ExA_piccoli_2019_IC_NovelliNatalucci_G9, 11, END CASE_ID,,,,,,

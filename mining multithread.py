@@ -26,7 +26,7 @@ def calcola_metriche(net, noise, log, initial_marking, final_marking, return_dic
 
 if __name__ == '__main__':
       
-    file_input="good.csv"
+    file_input="output_preprocessing/wrong.csv"
     event_log = pd.read_csv(file_input, encoding ="utf_8")
     event_log = pm4py.format_dataframe(event_log, case_id='Case_Id',timestamp_key='Timestamp',activity_key='Activity')
     start_activty = pm4py.get_start_activities(event_log)
@@ -34,20 +34,20 @@ if __name__ == '__main__':
     print("Start activities: {}\nEnd activities: {}".format(start_activty, end_activity))
 
     pm4py.write_xes(event_log, "log.xes")
-    log = pm4py.read_xes('log.xes')
+    log = pm4py.read_xes('log.xes') 
 
 
     nets=[]
     im=[]
     fm=[]
-
+    filename=file_input.split("/")[1].split(".")[0]
     for i in range (0,9,1):
         noise=i/10+0.1
         net, initial_marking, final_marking = inductive_miner.apply(log, variant=inductive_miner.Variants.IMf, parameters={inductive_miner.Variants.IMf.value.Parameters.NOISE_THRESHOLD: noise})
         nets.insert(i,net)
         im.insert(i,initial_marking)
         fm.insert(i,final_marking)
-        path="images_net/"+file_input.split(".")[0]+"/step "+str(i)+" noise "+str(round(noise,2)).replace(".",",") +".png"
+        path="images_net/"+filename+"/step "+str(i)+" noise "+str(round(noise,2)).replace(".",",") +".png"
         pm4py.save_vis_petri_net(nets[i], initial_marking, final_marking, path)    
              
     manager = multiprocessing.Manager()
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     for i in range (0,9,1):       
         p[i].join()       
     
-    pd.DataFrame(return_dict.values()).to_csv("metriche_"+file_input.split(".")[0]+".csv", header=True, index=False)
+    pd.DataFrame(return_dict.values()).to_csv("output_mining/metriche_"+filename+".csv", header=True, index=False)
 
 
 

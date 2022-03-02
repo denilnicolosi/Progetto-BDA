@@ -8,7 +8,7 @@ from pm4py.algo.evaluation.generalization import algorithm as generalization_eva
 from pm4py.algo.evaluation.simplicity import algorithm as simplicity_evaluator
 from pm4py.algo.analysis.woflan import algorithm as woflan
 
-file_input="good.csv"
+file_input="wrong.csv"
 event_log = pd.read_csv(file_input, encoding ="utf_8")
 event_log = pm4py.format_dataframe(event_log, case_id='Case_Id',timestamp_key='Timestamp',activity_key='Activity')
 start_activty = pm4py.get_start_activities(event_log)
@@ -29,7 +29,7 @@ for i in range (1,10,1):
     
     metrica={}
     metrica['noise']= noise
-    #metrica['fitness'] = replay_fitness_evaluator.apply(log, net, initial_marking, final_marking, variant=replay_fitness_evaluator.Variants.ALIGNMENT_BASED)["averageFitness"]
+    metrica['fitness'] = replay_fitness_evaluator.apply(log, net, initial_marking, final_marking, variant=replay_fitness_evaluator.Variants.ALIGNMENT_BASED)["averageFitness"]
     metrica['precision'] = precision_evaluator.apply(log, net, initial_marking, final_marking, variant=precision_evaluator.Variants.ALIGN_ETCONFORMANCE)
     metrica['generalization'] = generalization_evaluator.apply(log, net, initial_marking, final_marking)
     metrica['simplicity'] = simplicity_evaluator.apply(net)
