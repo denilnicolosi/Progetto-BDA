@@ -13,8 +13,8 @@ from pm4py.algo.analysis.woflan import algorithm as woflan
 import glob
 import os
 
-input_path="output_preprocessing/*.csv"
-output_dir="output_mining"
+input_path="output_preprocessing\\good.csv"
+output_dir="output_mining_ExB"
 
 def calcola_metriche(net, noise, log, initial_marking, final_marking, return_dict,i):
     metrica={}
@@ -40,7 +40,8 @@ if __name__ == '__main__':
         
         group_name=filename.split("\\")[-1].split(".")[0]
         
-        #scrittura file xes      
+        #scrittura file xes     
+        os.makedirs(output_dir, exist_ok=True) 
         filename_xes=output_dir+"/"+group_name+".xes"
         pm4py.write_xes(event_log, filename_xes)
         log = pm4py.read_xes(filename_xes) 

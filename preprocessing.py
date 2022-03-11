@@ -8,9 +8,9 @@ import os
 import sys
 import glob
 
-result_file_path="y_tesi_completo_exA.csv"
-output_dir="output_preprocessing"
-input_path="./ExA/*/*.rtf"
+result_file_path="y_tesi_completo_exB.csv"
+output_dir="output_preprocessing_ExB"
+input_path="./ExB/*/*.rtf"
 
 
 def diff_param(par1,par2):
@@ -116,7 +116,6 @@ def find_score(row1, row2):
         score+=diff_param_value(row1[5],row2[5])
     return score
 
-directory=".//ExA"
 trace_list= [["Case_Id","Timestamp","Activity","Blockname","Type","1st-param","2st-param","3st-param","4st-param"]]
 
 
@@ -211,6 +210,7 @@ for row in trace_list:
             trace_list_good=np.append(trace_list_good, [list(row)],axis=0)         
 
 #scrittura in output delle diverse trace list
+os.makedirs(output_dir, exist_ok=True) 
 pandas.DataFrame(trace_list_good).to_csv(output_dir+"/good.csv", header=False, index=False)
 pandas.DataFrame(trace_list_wrong).to_csv(output_dir+"/wrong.csv", header=False, index=False)
 pandas.DataFrame(trace_list).to_csv(output_dir+"/all.csv", header=False, index=False)    

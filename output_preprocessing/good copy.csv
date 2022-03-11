@@ -1,7 +1,0 @@
-Case_Id,Timestamp,Activity,Blockname,Type,1st-param,2st-param,3st-param,4st-param
-ExA_grandi_2018_LiceoGalilei2, 0, START CASE_ID,,,,,,
-ExA_grandi_2018_LiceoGalilei2, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 0.45, Speed = 80, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoGalilei2, 5, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 1.5, Speed = 80, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoGalilei2, 6, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 80, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoGalilei2, 7, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.8, Speed = 80, Steering = 0, MotorPorts = 123
-ExA_grandi_2018_LiceoGalilei2, 17, END CASE_ID,,,,,,
