@@ -1,3 +1,4 @@
+from tokenize import group
 import numpy as np
 import pandas as pd
 import pm4py
@@ -9,7 +10,11 @@ from pm4py.algo.evaluation.precision import algorithm as precision_evaluator
 from pm4py.algo.evaluation.generalization import algorithm as generalization_evaluator
 from pm4py.algo.evaluation.simplicity import algorithm as simplicity_evaluator
 from pm4py.algo.analysis.woflan import algorithm as woflan
+import glob
+import os
 
+input_path="output_preprocessing/*.csv"
+output_dir="output_mining"
 
 def calcola_metriche(net, noise, log, initial_marking, final_marking, return_dict,i):
     metrica={}
@@ -26,70 +31,50 @@ def calcola_metriche(net, noise, log, initial_marking, final_marking, return_dic
 
 if __name__ == '__main__':
       
-    file_input="output_preprocessing/wrong.csv"
-    event_log = pd.read_csv(file_input, encoding ="utf_8")
-    event_log = pm4py.format_dataframe(event_log, case_id='Case_Id',timestamp_key='Timestamp',activity_key='Activity')
-    start_activty = pm4py.get_start_activities(event_log)
-    end_activity = pm4py.get_end_activities(event_log)
-    print("Start activities: {}\nEnd activities: {}".format(start_activty, end_activity))
-
-    pm4py.write_xes(event_log, "log.xes")
-    log = pm4py.read_xes('log.xes') 
-
-
-    nets=[]
-    im=[]
-    fm=[]
-    filename=file_input.split("/")[1].split(".")[0]
-    for i in range (0,9,1):
-        noise=i/10+0.1
-        net, initial_marking, final_marking = inductive_miner.apply(log, variant=inductive_miner.Variants.IMf, parameters={inductive_miner.Variants.IMf.value.Parameters.NOISE_THRESHOLD: noise})
-        nets.insert(i,net)
-        im.insert(i,initial_marking)
-        fm.insert(i,final_marking)
-        path="images_net/"+filename+"/step "+str(i)+" noise "+str(round(noise,2)).replace(".",",") +".png"
-        pm4py.save_vis_petri_net(nets[i], initial_marking, final_marking, path)    
-             
-    manager = multiprocessing.Manager()
-    return_dict = manager.dict()
-    p=[]
-    for i in range (0,9,1):  
-       p.insert(i, Process(target=calcola_metriche, args=(nets[i],i/10+0.1, log, im[i], fm[i], return_dict,i)))
-       p[i].start()         
+    for filename in glob.glob(input_path):
         
-    for i in range (0,9,1):       
-        p[i].join()       
-    
-    pd.DataFrame(return_dict.values()).to_csv("output_mining/metriche_"+filename+".csv", header=True, index=False)
+        event_log = pd.read_csv(filename, encoding ="utf_8")
+        event_log = pm4py.format_dataframe(event_log, case_id='Case_Id',timestamp_key='Timestamp',activity_key='Activity')
+        start_activty = pm4py.get_start_activities(event_log)
+        end_activity = pm4py.get_end_activities(event_log)
+        
+        group_name=filename.split("\\")[-1].split(".")[0]
+        
+        #scrittura file xes      
+        filename_xes=output_dir+"/"+group_name+".xes"
+        pm4py.write_xes(event_log, filename_xes)
+        log = pm4py.read_xes(filename_xes) 
 
+        nets=[]
+        im=[]
+        fm=[]
+        number_step=9        
+        for i in range (0,number_step,1):
+            noise=i/10+0.1
+            #applico l'algoritmo inductive miner con i diversi noise threshold
+            net, initial_marking, final_marking = inductive_miner.apply(log, variant=inductive_miner.Variants.IMf, parameters={inductive_miner.Variants.IMf.value.Parameters.NOISE_THRESHOLD: noise})
+            nets.insert(i,net)
+            im.insert(i,initial_marking)
+            fm.insert(i,final_marking)
+            path=output_dir+"/images_net/"+group_name
+            os.makedirs(path, exist_ok=True)         
+            path+="/noise "+str(round(noise,2)).replace(".",",") +".png"
+            #salvataggio immagine rete di petri sul percorso definito            
+            pm4py.save_vis_petri_net(nets[i], initial_marking, final_marking, path)    
+                
+        manager = multiprocessing.Manager()
+        return_dict = manager.dict()
+        p=[]
+        #eseguo un thread per il calcolo delle metriche per ogni step di noise threshold
+        for i in range (0,number_step,1):  
+            p.insert(i, Process(target=calcola_metriche, args=(nets[i],i/10+0.1, log, im[i], fm[i], return_dict, i)))
+            p[i].start()         
+        
+        #attendo che i vari thread terminino    
+        for i in range (0,9,1):       
+            p[i].join()       
+        
+        #scrittura metriche ottenute in file di output csv
+        pd.DataFrame(return_dict.values()).to_csv(output_dir+"/metriche_"+group_name+".csv", header=True, index=False)
 
-
-
-
-
-
-
-
-
-
-
-#dfg, start_activities, end_activities = pm4py.discover_dfg(log)
-#pm4py.view_dfg(dfg, start_activities, end_activities)
-
-#process_model = pm4py.discover_bpmn_inductive(log, 0.1)
-#pm4py.view_bpmn(process_model)
-
-#process_tree = pm4py.discover_tree_inductive(log)
-#pm4py.view_process_tree(process_tree)
-
-#map = pm4py.discover_heuristics_net(log, dependency_threshold=0.9)
-#pm4py.view_heuristics_net(map)
-
-#net2, im2, fm2 = pm4py.discover_petri_net_inductive(log, 0.7)
-
-#net2, im2, fm2 = pm4py.discover_petri_net_alpha_plus(log)
-#pm4py.view_petri_net(net2, im2, fm2)
-
-#net2, im2, fm2 = pm4py.discover_petri_net_heuristics(log)
-#pm4py.view_petri_net(net2, im2, fm2)
 

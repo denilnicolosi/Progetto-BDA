@@ -1,6 +1,15 @@
 MODIFICHE:
 
-Calcolare la fitness, generalization e precision per capire , woflan workflowanalysis per valutare la sound del modello.
-Usare un inductive, o heuristic miner, fare petri net
-Deve avere una buona fitness, generalization, precision ci interesse, semplicity buon compresso tra questi 4, riporto in una tabella 
-Provare fuzzy
+Activity 30%, path 20% ------ per i good
+Activity 41%, path 20% ------ per i wrong 
+La velocità incide sulla precisione
+Bisogna vedere meglio le frequenze
+Differenza tra comportamento buono e cattivo è sul NUMERO DEI TENTATIVI
+Nel manipolare più parametri i ragazzi si perdono
+-	Change al posto di increase e decrease
+-	Fare la relazione + presentazione con le considerazioni viste alla call
+-	Giochiamo con disco per vedere sul modello come gestire le durate attraverso il timestamp, tutto su Disco
+-   sistemare codice
+
+Che differenza c’è tra chi si comporta bene e chi si comporta male (sulla relazione)
+Anche sull’ExB proviamo ad estrarre conoscenza con Fuzzy e Heuristic Miner

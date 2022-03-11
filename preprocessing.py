@@ -6,10 +6,12 @@ import pandas
 import numpy as np
 import os
 import sys
+import glob
 
-from sympy import false, true
+result_file_path="y_tesi_completo_exA.csv"
+output_dir="output_preprocessing"
+input_path="./ExA/*/*.rtf"
 
-np.set_printoptions(threshold=sys.maxsize)
 
 def diff_param(par1,par2):
     name_param=par1.split(" = ")[0]
@@ -117,23 +119,14 @@ def find_score(row1, row2):
 directory=".//ExA"
 trace_list= [["Case_Id","Timestamp","Activity","Blockname","Type","1st-param","2st-param","3st-param","4st-param"]]
 
-#for file in os.listdir(directory):
-#    filename=os.fsdecode(file)
-filename="piccoli"
-for file2 in os.listdir(directory+"//"+filename):
-    if file2.endswith(".rtf"):
-        path=directory+"//"+filename+"//"+file2
-        #path=".//ExA//grandi//2018_LiceoGalilei1.rtf"
-        #path=".//ExA//grandi//2019_TALENTcampJesi_g3.rtf"
-        df1 = pandas.read_csv(path, encoding ="utf_8")
+
+for filename in glob.glob(input_path):
+    if filename.endswith(".rtf"):
+            
+        df1 = pandas.read_csv(filename, encoding ="utf_8")                        
         
-        #Filtro azioni inutili per il task
-        #df1 = df1.drop(df1[df1.Blockname == "Sound"].index)
-        #df1 = df1.drop(df1[df1.Blockname == "Brick Light"].index)
-        #df1 = df1.drop(df1[df1.Blockname == "Display"].index)            
-        
-        group_name=path.replace("//","_")
-        group_name=group_name[2:len(group_name)-4]
+        group_name=filename.replace("\\","_")
+        group_name=group_name[2:len(group_name)-4]      
         
         total_attempt=0
         max_instruction=0
@@ -164,7 +157,7 @@ for file2 in os.listdir(directory+"//"+filename):
                 index_instruction=index_instruction+1       
                 
         timestamp=0 
-            
+        #aggiunta di attività iniziale fittizia alla trace list    
         row=group_name+", "+ str(timestamp) + ", " + "START CASE_ID" + ",,,,,,"
         trace_list=np.append(trace_list, [row.split(",")],axis=0)
         
@@ -196,25 +189,16 @@ for file2 in os.listdir(directory+"//"+filename):
                         
             if(not np.array_equal(instruction[i],instruction[i+1])):
                 for index in list_index:
-                    #print("-----------------------------------------")
-                    #print("riga1: ",str(instruction[i][index[0]]))
-                    #print("riga2: ",str(instruction[i+1][index[1]]))
                     difference(instruction[i][index[0]],instruction[i+1][index[1]])  
-            #else:
-                #print("no action")
-                #row=group_name+", "+ str(timestamp) + ", " + "No action" + ",,,,,,"
-                #trace_list=np.append(trace_list, [row.split(",")],axis=0)
+            
                 
+         #aggiunta di attività finale fittizia alla trace list         
         row=group_name+", "+ str(timestamp) + ", " + "END CASE_ID" + ",,,,,,"
         trace_list=np.append(trace_list, [row.split(",")],axis=0)
         
-    #break;
-#break;
-
-
     
-# scrittura output su file in base al risultato
-df_result = pandas.read_csv("y_tesi_completo_exA.csv", encoding ="utf_8")
+# composizione di diverse trace list in base al fatto che il gruppo abbia raggiunto o meno l'obiettivo, informazione ricavata dal file "y_tesi_completo_ex*"
+df_result = pandas.read_csv(result_file_path, encoding ="utf_8")
 trace_list_wrong = trace_list_good = [["Case_Id","Timestamp","Activity","Blockname","Type","1st-param","2st-param","3st-param","4st-param"]]
 for row in trace_list:
     start_index=row[0].find("_",row[0].index("_")+1)+1
@@ -226,7 +210,8 @@ for row in trace_list:
         else:
             trace_list_good=np.append(trace_list_good, [list(row)],axis=0)         
 
-pandas.DataFrame(trace_list_good).to_csv("output_preprocessing/good.csv", header=False, index=False)
-pandas.DataFrame(trace_list_wrong).to_csv("output_preprocessing/wrong.csv", header=False, index=False)
-pandas.DataFrame(trace_list).to_csv("output_preprocessing/all.csv", header=False, index=False)    
+#scrittura in output delle diverse trace list
+pandas.DataFrame(trace_list_good).to_csv(output_dir+"/good.csv", header=False, index=False)
+pandas.DataFrame(trace_list_wrong).to_csv(output_dir+"/wrong.csv", header=False, index=False)
+pandas.DataFrame(trace_list).to_csv(output_dir+"/all.csv", header=False, index=False)    
     

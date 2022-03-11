@@ -1,4 +1,388 @@
 Case_Id,Timestamp,Activity,Blockname,Type,1st-param,2st-param,3st-param,4st-param
+ExA_grandi_2018_LiceoGalilei1, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoGalilei1, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 2, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 2, Decrease Speed, MoveSteering, OnForRotations, Rotations = 5, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 3, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 1, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 4, Increase Speed, MoveSteering, OnForSeconds, Seconds = 1, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 5, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 6, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4, Speed = 25, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 6, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 4, Speed = 25, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 7, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2, Speed = 60, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 7, Increase Speed, MoveSteering, OnForSeconds, Seconds = 2, Speed = 60, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 8, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4, Speed = 60, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 18, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 52, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 18, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 3, Speed = 52, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 19, Increase Speed, MoveSteering, OnForSeconds, Seconds = 3, Speed = 53, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 20, Increase Speed, MoveSteering, OnForSeconds, Seconds = 3, Speed = 58, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 21, Increase Speed, MoveSteering, OnForSeconds, Seconds = 3, Speed = 60, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 29, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 1.3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 29, Increase Speed, MoveSteering, OnForSeconds, Seconds = 1.3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei1, 32, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoGalilei2, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoGalilei2, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 0.45, Speed = 80, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei2, 5, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 1.5, Speed = 80, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei2, 6, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 80, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei2, 7, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.8, Speed = 80, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei2, 17, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoGalilei3, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoGalilei3, 0, Add blockname Brick Light, Brick Light, On, Colour = 2, Pulse = 1,nan,nan
+ExA_grandi_2018_LiceoGalilei3, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 6, Speed = 32, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei3, 1, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 6.5, Speed = 32, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei3, 6, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoGalilei4, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoGalilei4, 0, Add blockname Start Loop Cycle, Start Loop Cycle, Index = 0,nan,nan,nan,nan
+ExA_grandi_2018_LiceoGalilei4, 0, Add blockname MoveSteering, MoveSteering, OnUnlimited, Speed = 100, Steering = 0, MotorPorts = 123,nan
+ExA_grandi_2018_LiceoGalilei4, 0, Add blockname EndLoopCycle, EndLoopCycle, TimeCompare Mode, Time = 5,nan,nan,nan
+ExA_grandi_2018_LiceoGalilei4, 1, Decrease Time, EndLoopCycle, TimeCompare Mode, Time = 3.6,nan,nan,nan
+ExA_grandi_2018_LiceoGalilei4, 2, Decrease Time, EndLoopCycle, TimeCompare Mode, Time = 2.5,nan,nan,nan
+ExA_grandi_2018_LiceoGalilei4, 4, Increase Time, EndLoopCycle, TimeCompare Mode, Time = 2.9,nan,nan,nan
+ExA_grandi_2018_LiceoGalilei4, 6, Decrease Time, EndLoopCycle, TimeCompare Mode, Time = 2.85,nan,nan,nan
+ExA_grandi_2018_LiceoGalilei4, 20, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoGalilei6, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoGalilei6, 0, Add blockname Start Loop Cycle, Start Loop Cycle, Index = 0,nan,nan,nan,nan
+ExA_grandi_2018_LiceoGalilei6, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 5.67, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei6, 0, Add blockname LoopInterrupt, LoopInterrupt, Number = 1,nan,nan,nan,nan
+ExA_grandi_2018_LiceoGalilei6, 0, Add blockname EndLoopCycle, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
+ExA_grandi_2018_LiceoGalilei6, 1, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoGalilei7, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoGalilei7, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 5, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 1, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 5, Speed = 17, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 2, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 7, Speed = 30, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 2, Increase Speed, MoveSteering, OnForSeconds, Seconds = 7, Speed = 30, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 4, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4, Speed = 30, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 10, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 6, Speed = 70, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 10, Increase Speed, MoveSteering, OnForSeconds, Seconds = 6, Speed = 70, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 11, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 30, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 11, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 5, Speed = 30, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 16, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 16, Increase Speed, MoveSteering, OnForSeconds, Seconds = 3, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 21, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 40, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 21, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 5, Speed = 40, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoGalilei7, 39, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini10G, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini10G, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini10G, 2, Change type OnForRotations, MoveSteering, OnForRotations, Rotations = 29, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini10G, 3, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 4.11, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini10G, 9, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.13, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini10G, 9, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini11G, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini11G, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini11G, 13, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini11G, 19, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.5, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini11G, 21, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.8, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini11G, 25, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini12G, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini12G, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 3, Speed = 73, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini12G, 1, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3.5, Speed = 73, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini12G, 3, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3.2, Speed = 73, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini12G, 4, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3.1, Speed = 73, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini12G, 8, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 73, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini12G, 11, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini1A, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini1A, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 5.6338, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini1A, 10, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini1F, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini1F, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 5.7874, Speed = 40, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini1F, 1, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.8, Speed = 40, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini1F, 2, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.7861, Speed = 40, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini1F, 3, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.7875, Speed = 40, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini1F, 5, Increase Speed, MoveSteering, OnForRotations, Rotations = 5.7875, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini1F, 7, Decrease Speed, MoveSteering, OnForRotations, Rotations = 5.7875, Speed = 60, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini1F, 7, Add blockname Sound, Sound, Play Tone, Frequency = 440, Volume = 78, Play Type = 0, Duration = 1
+ExA_grandi_2018_LiceoVoltaFellini1F, 9, Change type Play File, Sound, Play File, FileName = Motor stop, Volume = 83, Play Type = 0,nan
+ExA_grandi_2018_LiceoVoltaFellini1F, 10, Increase Volume, Sound, Play File, FileName = Motor stop, Volume = 100, Play Type = 0,nan
+ExA_grandi_2018_LiceoVoltaFellini1F, 10, Add blockname Sound, Sound, Play File, FileName = Motor start, Volume = 100, Play Type = 0,nan
+ExA_grandi_2018_LiceoVoltaFellini1F, 11, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini2A, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini2A, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 18.18, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini2A, 4, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.79, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini2A, 13, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini2F, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini2F, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini2F, 1, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.6842, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini2F, 7, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.6953, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini2F, 8, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini3F, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini3F, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 13, Increase Speed, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 16, Increase Rotations, MoveSteering, OnForRotations, Rotations = 39.5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 16, Decrease Speed, MoveSteering, OnForRotations, Rotations = 39.5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 17, Increase Rotations, MoveSteering, OnForRotations, Rotations = 79, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 17, Increase Speed, MoveSteering, OnForRotations, Rotations = 79, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 18, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 30.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 19, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 15.9, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 20, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 21, Increase Rotations, MoveSteering, OnForRotations, Rotations = 7.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 23, Increase Rotations, MoveSteering, OnForRotations, Rotations = 8, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 24, Increase Rotations, MoveSteering, OnForRotations, Rotations = 8.7, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 25, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 8.6, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3F, 25, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini3G, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini3G, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3G, 5, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3G, 6, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6.5, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3G, 7, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.2, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3G, 8, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.13, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3G, 9, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.1, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3G, 10, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.05, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3G, 11, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.02, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3G, 12, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3G, 13, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.9, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3G, 14, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.88, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3G, 15, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.89, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini3G, 18, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini4A, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini4A, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 5.684, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini4A, 30, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini4F, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini4F, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini4F, 1, Increase Rotations, MoveSteering, OnForRotations, Rotations = 2, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini4F, 1, Decrease Speed, MoveSteering, OnForRotations, Rotations = 2, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini4F, 6, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 8.52, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini4F, 8, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini4F, 11, Change type OnForRotations, MoveSteering, OnForRotations, Rotations = 5.6841, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini4F, 15, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini5A, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini5A, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 5.79, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini5A, 5, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.8, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini5A, 8, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini5F, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini5F, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 6, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini5F, 4, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.5, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini5F, 6, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.3, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini5F, 9, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.5, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini5F, 11, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini5F, 12, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6.2, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini5F, 15, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini6A, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini6A, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6A, 3, Increase Rotations, MoveSteering, OnForRotations, Rotations = 10, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6A, 6, Increase Speed, MoveSteering, OnForRotations, Rotations = 10, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6A, 7, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 4, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6A, 7, Decrease Speed, MoveSteering, OnForRotations, Rotations = 4, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6A, 9, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6.5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6A, 9, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini6F, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini6F, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 1, Increase Rotations, MoveSteering, OnForRotations, Rotations = 4, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 3, Increase Rotations, MoveSteering, OnForRotations, Rotations = 8, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 5, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 8, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.2778, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 9, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.1389, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 10, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.1806, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 11, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.2778, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 12, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.5556, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 13, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.6944, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 15, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 2.5, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 17, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3.5, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 20, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3.25, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 21, Change type OnForRotations, MoveSteering, OnForRotations, Rotations = 5.6944, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini6F, 21, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini7A, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini7A, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 2, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini7A, 8, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini7A, 8, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 4, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini7A, 10, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini7A, 10, Increase Speed, MoveSteering, OnForSeconds, Seconds = 2.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini7A, 13, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini7F, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini7F, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 5.85, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini7F, 1, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.95, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini7F, 2, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.9, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini7F, 3, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini8A, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini8A, 0, Add blockname LargeMotor, LargeMotor, OnForSeconds, Seconds = 10, Speed = 50, MotorPort = 104,nan
+ExA_grandi_2018_LiceoVoltaFellini8A, 1, Change blockname to MoveSteering, MoveSteering, OnForSeconds, Seconds = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini8A, 2, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 60, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini8A, 2, Increase Speed, MoveSteering, OnForSeconds, Seconds = 3, Speed = 60, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini8A, 4, Increase Speed, MoveSteering, OnForSeconds, Seconds = 3, Speed = 70, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini8A, 5, Increase Speed, MoveSteering, OnForSeconds, Seconds = 3, Speed = 73, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini8A, 9, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini8G, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini8G, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 5.6841, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini8G, 15, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini8G, 17, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.95, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini8G, 18, END CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini9G, 0, START CASE_ID,,,,,,
+ExA_grandi_2018_LiceoVoltaFellini9G, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 5.684, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2018_LiceoVoltaFellini9G, 10, END CASE_ID,,,,,,
+ExA_grandi_2019_IC_Leopardi_Gualdo_g1, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_IC_Leopardi_Gualdo_g1, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g1, 1, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g1, 3, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g1, 11, END CASE_ID,,,,,,
+ExA_grandi_2019_IC_Leopardi_Gualdo_g2, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_IC_Leopardi_Gualdo_g2, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g2, 8, Increase Rotations, MoveSteering, OnForRotations, Rotations = 10, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g2, 14, END CASE_ID,,,,,,
+ExA_grandi_2019_IC_Leopardi_Gualdo_g3, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_IC_Leopardi_Gualdo_g3, 0, Add blockname MoveSteering, MoveSteering, OnUnlimited, Speed = 50, Steering = 0, MotorPorts = 123,nan
+ExA_grandi_2019_IC_Leopardi_Gualdo_g3, 7, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 9, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g3, 9, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.29, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g3, 10, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.15, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g3, 12, END CASE_ID,,,,,,
+ExA_grandi_2019_IC_Leopardi_Gualdo_g4, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_IC_Leopardi_Gualdo_g4, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 10, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g4, 2, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g4, 6, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.15, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g4, 7, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g4, 9, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.55, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g4, 10, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.7, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g4, 11, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.75, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g4, 14, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.73, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g4, 19, END CASE_ID,,,,,,
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 2.5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 1, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3.8, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 2, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4, Speed = 80, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 2, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 4, Speed = 80, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 3, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2, Speed = 80, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 4, Increase Speed, MoveSteering, OnForSeconds, Seconds = 2, Speed = 87, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 5, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 87, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 9, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 3, Speed = 82, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 10, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 3, Speed = 77, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 12, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 2.6, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 12, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 2.6, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 13, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 2.8, Speed = 75, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Leopardi_Gualdo_g5, 14, END CASE_ID,,,,,,
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G1, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G1, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 100, Speed = 71, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G1, 18, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 2, Speed = 55, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G1, 20, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 7, Speed = 55, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G1, 21, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G1, 21, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G1, 34, END CASE_ID,,,,,,
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G2, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G2, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 10, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G2, 1, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G2, 2, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G2, 24, END CASE_ID,,,,,,
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G3, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G3, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 10, Speed = -24, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G3, 1, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G3, 1, Increase Speed, MoveSteering, OnForSeconds, Seconds = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G3, 2, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G3, 3, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 70, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G3, 3, Increase Speed, MoveSteering, OnForSeconds, Seconds = 5, Speed = 70, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G3, 4, Decrease Speed, MoveSteering, OnForSeconds, Seconds = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G3, 5, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 6, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G3, 6, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G3, 8, END CASE_ID,,,,,,
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G5, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G5, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 7.3, Speed = 10, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G5, 2, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7.2, Speed = 10, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G5, 3, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7.1, Speed = 10, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G5, 4, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7.012, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G5, 4, Increase Speed, MoveSteering, OnForRotations, Rotations = 7.012, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G5, 8, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 3.1, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G5, 9, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6.2, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G5, 10, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G5, 11, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.9, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G5, 29, END CASE_ID,,,,,,
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G6, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G6, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 2, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G6, 2, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 3, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G6, 3, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G6, 5, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G6, 12, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.3, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_IC_Lotto_Jesi_prim_G6, 24, END CASE_ID,,,,,,
+ExA_grandi_2019_TALENTcampJesi_g1, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_TALENTcampJesi_g1, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 17.5, Speed = 10, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g1, 3, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 10, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g1, 3, Increase Speed, MoveSteering, OnForSeconds, Seconds = 10, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g1, 9, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 3.7, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g1, 11, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.5, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g1, 12, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.3, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g1, 13, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.16, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g1, 15, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.34, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g1, 16, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.24, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g1, 22, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.22, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g1, 26, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 4.2, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g1, 27, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 4.21, Speed = 50, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g1, 31, END CASE_ID,,,,,,
+ExA_grandi_2019_TALENTcampJesi_g2, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_TALENTcampJesi_g2, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 20, Speed = 24, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 1, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 15, Speed = 34, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 1, Increase Speed, MoveSteering, OnForRotations, Rotations = 15, Speed = 34, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 2, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 34, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 2, Add blockname Start Loop Cycle, Start Loop Cycle, Index = 0,nan,nan,nan,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 2, Add blockname Sound, Sound, Play File, FileName = Hello, Volume = 100, Play Type = 0,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 2, Add blockname EndLoopCycle, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 3, Increase Speed, MoveSteering, OnForRotations, Rotations = 5, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 4, Increase Rotations, MoveSteering, OnForRotations, Rotations = 8, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 4, Change FileName, Sound, Play File, FileName = Black, Volume = 100, Play Type = 0,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 4, Delete blockname Start Loop Cycle, Start Loop Cycle, Index = 0,nan,nan,nan,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 4, Delete blockname EndLoopCycle, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 5, Delete blockname Sound, Sound, Play File, FileName = Black, Volume = 100, Play Type = 0,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 6, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 7, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 6, Add blockname Sound, Sound, Play File, FileName = Black, Volume = 100, Play Type = 0,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 9, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.65, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 13, Change FileName, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 14, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6.5, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 17, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 18, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 5.15, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 19, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 5.25, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 19, Change FileName, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 20, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 5.27, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 22, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 22, Change FileName, Sound, Play File, FileName = Okey-dokey, Volume = 100, Play Type = 0,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 24, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 30, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 24, Add blockname Start Loop Cycle, Start Loop Cycle, Index = 0,nan,nan,nan,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 24, Add blockname EndLoopCycle, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 25, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 5.45, Speed = 38, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g2, 27, Change FileName, Sound, Play File, FileName = Bravo, Volume = 100, Play Type = 0,nan
+ExA_grandi_2019_TALENTcampJesi_g2, 32, END CASE_ID,,,,,,
+ExA_grandi_2019_TALENTcampJesi_g3, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_TALENTcampJesi_g3, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 0, Add blockname Sound, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
+ExA_grandi_2019_TALENTcampJesi_g3, 1, Change type OnForRotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 2, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 7, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.8, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 8, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.9, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 10, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.85, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 12, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.89, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 14, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.9, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 17, Delete blockname Sound, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
+ExA_grandi_2019_TALENTcampJesi_g3, 18, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.95, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 18, Add blockname Sound, Sound, Play File, FileName = Game over, Volume = 100, Play Type = 0,nan
+ExA_grandi_2019_TALENTcampJesi_g3, 20, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.93, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 23, Decrease Speed, MoveSteering, OnForRotations, Rotations = 5.93, Speed = 60, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 30, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 5.927, Speed = 60, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 32, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5.928, Speed = 60, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcampJesi_g3, 33, Add blockname Start Loop Cycle, Start Loop Cycle, Index = 0,nan,nan,nan,nan
+ExA_grandi_2019_TALENTcampJesi_g3, 33, Add blockname EndLoopCycle, EndLoopCycle, Unlimited Mode,nan,nan,nan,nan
+ExA_grandi_2019_TALENTcampJesi_g3, 37, END CASE_ID,,,,,,
+ExA_grandi_2019_TALENTcamp_Osimo_g1, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_TALENTcamp_Osimo_g1, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 1, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g1, 1, Increase Rotations, MoveSteering, OnForRotations, Rotations = 3, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g1, 3, Increase Rotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g1, 5, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g1, 11, Decrease Speed, MoveSteering, OnForRotations, Rotations = 6, Speed = 90, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g1, 12, Increase Speed, MoveSteering, OnForRotations, Rotations = 6, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g1, 23, Decrease Rotations, MoveSteering, OnForRotations, Rotations = 4, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g1, 24, Increase Rotations, MoveSteering, OnForRotations, Rotations = 6, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g1, 35, END CASE_ID,,,,,,
+ExA_grandi_2019_TALENTcamp_Osimo_g2, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_TALENTcamp_Osimo_g2, 0, Add blockname MoveSteering, MoveSteering, OnForSeconds, Seconds = 15, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g2, 1, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 10, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g2, 2, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 7, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g2, 4, Increase Seconds, MoveSteering, OnForSeconds, Seconds = 9, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g2, 5, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 8, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g2, 6, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 7, Speed = 20, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g2, 7, Increase Speed, MoveSteering, OnForSeconds, Seconds = 7, Speed = 25, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g2, 8, Decrease Seconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 25, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g2, 11, END CASE_ID,,,,,,
+ExA_grandi_2019_TALENTcamp_Osimo_g3, 0, START CASE_ID,,,,,,
+ExA_grandi_2019_TALENTcamp_Osimo_g3, 0, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g3, 1, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g3, 2, Change type OnForRotations, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g3, 2, Add blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 0.75, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g3, 5, Increase Rotations, MoveSteering, OnForRotations, Rotations = 0.7778, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g3, 6, Add blockname Timer Measure, Timer Measure, Timer ID = 1, Value = 0.003,nan,nan,nan
+ExA_grandi_2019_TALENTcamp_Osimo_g3, 7, Change blockname to MoveSteering, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g3, 8, Delete blockname MoveSteering, MoveSteering, OnForRotations, Rotations = 5, Speed = 100, Steering = 0, MotorPorts = 123
+ExA_grandi_2019_TALENTcamp_Osimo_g3, 10, END CASE_ID,,,,,,
 ExA_piccoli_2018_ICAlighieri1, 0, START CASE_ID,,,,,,
 ExA_piccoli_2018_ICAlighieri1, 0, Add blockname MoveSteering, MoveSteering, OnUnlimited, Speed = 100, Steering = 0, MotorPorts = 123,nan
 ExA_piccoli_2018_ICAlighieri1, 5, Change type OnForSeconds, MoveSteering, OnForSeconds, Seconds = 4, Speed = 100, Steering = 0, MotorPorts = 123
