@@ -13,7 +13,7 @@ from pm4py.algo.analysis.woflan import algorithm as woflan
 import glob
 import os
 
-input_path="output_preprocessing\\good.csv"
+input_path="output_preprocessing_ExB\\change\\*.csv"
 output_dir="output_mining_ExB"
 
 def calcola_metriche(net, noise, log, initial_marking, final_marking, return_dict,i):
@@ -53,7 +53,8 @@ if __name__ == '__main__':
         for i in range (0,number_step,1):
             noise=i/10+0.1
             #applico l'algoritmo inductive miner con i diversi noise threshold
-            net, initial_marking, final_marking = inductive_miner.apply(log, variant=inductive_miner.Variants.IMf, parameters={inductive_miner.Variants.IMf.value.Parameters.NOISE_THRESHOLD: noise})
+            net, initial_marking, final_marking = inductive_miner.apply(log, variant=inductive_miner.Variants.IMf, 
+                                                                        parameters={inductive_miner.Variants.IMf.value.Parameters.NOISE_THRESHOLD: noise})
             nets.insert(i,net)
             im.insert(i,initial_marking)
             fm.insert(i,final_marking)
@@ -62,7 +63,8 @@ if __name__ == '__main__':
             path+="/noise "+str(round(noise,2)).replace(".",",") +".png"
             #salvataggio immagine rete di petri sul percorso definito            
             pm4py.save_vis_petri_net(nets[i], initial_marking, final_marking, path)    
-                
+        
+        '''
         manager = multiprocessing.Manager()
         return_dict = manager.dict()
         p=[]
@@ -77,5 +79,5 @@ if __name__ == '__main__':
         
         #scrittura metriche ottenute in file di output csv
         pd.DataFrame(return_dict.values()).to_csv(output_dir+"/metriche_"+group_name+".csv", header=True, index=False)
-
+        '''        
 
