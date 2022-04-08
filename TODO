@@ -18,6 +18,6 @@ Anche sull’ExB proviamo ad estrarre conoscenza con Fuzzy e Heuristic Miner
 ///Scrivere anche su relazione
 fatto - duplicare il file del preprocessing 
 fatto - eliminare la colonna condition
-su change distance fare filtro su cambiamento di 5cm
+fatto - su change distance fare filtro su cambiamento di 5cm
 fatto - elimnare i ultrasonic sensor compare doppi
 fatto - eliminare i start loop cycle e end loop cycle

@@ -8,8 +8,8 @@ np.set_printoptions(threshold=sys.maxsize)
 
 result_file_path="y_tesi_completo_exB.csv"
 output_dir="output_preprocessing_ExB"
-#input_path="./ExB/*/*.rtf"
-input_path="./ExB/grandi/2019_IC_Lotto_Jesi_sec_G1.rtf"
+input_path="./ExB/*/*.rtf"
+
 
 def diff_param(par1,par2):
     name_param=par1.split(" = ")[0]
@@ -18,7 +18,7 @@ def diff_param(par1,par2):
     
     try:
         #filtra distance maggiore di 5cm
-        if(name_param!= " Distance CM") or (name_param== " Distance CM" and abs(float(val1)-float(val2)>5)):
+        if(name_param!= ' Distance CM') or (name_param== ' Distance CM' and abs(float(val1)-float(val2))>5):
             if(float(val1)>float(val2)):
                 return "Decrease"+ name_param
             else:
@@ -89,10 +89,6 @@ def diff_param_value(par1,par2):
                 score=0    
         
         return score
-    except ValueError:
-        return 0      
-    except IndexError:
-        return 0 
     except :
         return 0        
                   
@@ -181,8 +177,6 @@ for filename in glob.glob(input_path):
                 
         #rimozione dell'istruzione 'Ultrasonic Sensor Compare CM' se duplicata
         instruction=remove_duplicate_compare(instruction)
-        print("DOPO")
-        print(instruction)        
                 
         timestamp=0 
         #aggiunta di attività iniziale fittizia alla trace list    
@@ -223,7 +217,6 @@ for filename in glob.glob(input_path):
          #aggiunta di attività finale fittizia alla trace list         
         row=group_name+", "+ str(timestamp) + ", " + "END CASE_ID" + ",,,,,,"
         trace_list=np.append(trace_list, [row.split(",")],axis=0)
-        
     
 # composizione di diverse trace list in base al fatto che il gruppo abbia raggiunto o meno l'obiettivo, informazione ricavata dal file "y_tesi_completo_ex*"
 df_result = pandas.read_csv(result_file_path, encoding ="utf_8")

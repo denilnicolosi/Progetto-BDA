@@ -82,10 +82,6 @@ def diff_param_value(par1,par2):
                 score=0    
         
         return score
-    except ValueError:
-        return 0      
-    except IndexError:
-        return 0 
     except :
         return 0        
                   
