@@ -166,14 +166,11 @@ for filename in glob.glob(input_path):
                 for k in range(len(instruction[i])): #instruction 
                     #popolo la matrice di punteggi 
                     score_list[j][k]=find_score(instruction[i][j], instruction[i+1][k])                                    
-                    #print(score_list[j][k],j,k)
-            #print("Score list:\n"+ str(score_list))                       
+                    
+                                  
             list_index=[]       
-            for j in range(len(instruction[i])): #instruction      
-                #print("Score list:\n"+ str(score_list))    
-                #print("Max:",score_list.max())
+            for j in range(len(instruction[i])): #instruction    
                 max_index=np.where(score_list==score_list.max())    
-                #print("Max index:",max_index[0][0],max_index[1][0])
                 list_index.append([max_index[0][0],max_index[1][0]])
                 score_list[:,max_index[1][0]]=-1
                 score_list[max_index[0][0],:]=-1                
